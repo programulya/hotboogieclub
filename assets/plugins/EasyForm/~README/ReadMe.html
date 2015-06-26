@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="For anyone looking for a simple but effective contact form powered by jQuery and PHP" />
+<meta name="keywords" content="david, pottrell, html, css, jquery, php, validation, validating" />
+<meta name="author" content="David Pottrell" />
+<title>Easy Contact Form | A Simple but Effective jQuery and PHP Contact Form</title>
+
+<!--GOOGLE FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+<!-- CSS STRUCTURE -->
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+<section id="container">
+<div id="header">
+<!--DELETE THIS TEXT-->
+<h1>Easy Contact Form Read Me</h1>
+<h2>The Easy Form Help File</h2>
+</div>
+
+<div id="content">
+<p>Thank you for purchasing my script. If you have any questions that are beyond 
+the scope of this help file, please feel free to email me at 
+<a href="mailto:hello@davidpottrell.co.uk">hello@davidpottrell.co.uk</a>.</p>
+<p>Thank you again for trying out this script!</p>
+<ul>
+<li><a href="#1">What is Easy Contact Form</a></li>
+<li><a href="#2">What is included</a></li>
+<li><a href="#3">How to install</a></li>
+	<ul>
+	<li><a href="#3a">Step One: HTML Structure</a></li>
+	<li><a href="#3b">Step Two: CSS Files and Structure</a></li>
+	<li><a href="#3c">Step Three: JavaScript Files and Structure</a></li>
+	<li><a href="#3d">Step Four: PHP File and Explanation</a></li>
+	<li><a href="#3e">Step Five: Optional Responsive CSS</a></li>
+	</ul>
+<li><a href="#4">Credits and Sources</a></li>
+<li><a href="#5">FAQ</a></li>
+<li><a href="#6">Changes</a></li>
+</ul>
+<hr>
+<h2><a name="1">What is Easy Contact Form</a></h2>
+<p>This Easy Contact Form is perfect for any style of website that's in need of a contact form. Not only does it validate, but it validates is a stylish way.</p>
+<p>The main feature that sets this form apart from the others is the fact that it uses captcha technology to stop spam bots from abusing the form but also ensures the form is easy enough to use for humans. As well as this it also uses PHPMailer in conjunction with JavaScript validation, this ensures that any information sent is valid and secure.</p>
+<p>By using JS validation alongside PHP the form ensures the user experience is a nice one. The JS validation is client-side which saves on bandwidth and loading times. If the user has Javascript disabled the form will use its PHP validation to remain validity.</p>
+<h2><a name="2">What is included</a></h2>
+<p>
+<strong>index.html</strong> - contains the form</br>
+<strong>submit.php</strong> - contains php validation and submit process</br>
+<strong>/form/</strong> - </br>
+<strong>/form/captcha.png</strong> - captcha background</br>
+<strong>/form/class.phpmailer.php</strong> - phpmailer</br>
+<strong>/form/form.js</strong> - contains JS validation and animation</br>
+<strong>/form/image.php</strong> - captcha</br>
+<strong>/form/league.tff</strong> - captcha font</br>
+<strong>/form/refresh.png</strong> - captcha refresh icon</br>
+<strong>/form/bg.png</strong> - background for demo</br>
+<strong>style.css</strong> - style for demo and form</br>
+<strong>/README/</strong> - read me files
+
+</p>
+
+<h2><a name="3">How to install</a></h2>
+<p>This form should be relatively easy for those who are experienced with HTML/JS/PHP to implement, however not everyone is as comfortable with coding. It's for this reason I've created the 6 simple steps for you to follow to get the form up and running in its basic form.</p>
+
+<h3><a name="3a">Step One: HTML Structure</a></h3>
+<p>This form is wrapped in its own div with the id 'form'. Simply open up index.html and copy the html form from <strong>line 42 to line 86.</strong></p>
+<img style="display:block;" src="readme_images/html.png">
+<p>Now paste this code where you would like the form to appear on your web page - Anywhere between <span class="code">&#60body&#62</span> and <span class="code">&#60/body&#62</span>. </p>
+
+<h3><a name="3b">Step Two: CSS Files and Structure</a></h3>
+<p>Moving onto the CSS. To use this form on an existing web page that already has a CSS stylesheet, open style.css and copy the code from <strong>line 93 to line 231</strong> and paste into your own stylesheet.</p>
+<img style="display:block;" src="readme_images/css.png"><br/>
+
+<h3><a name="3c">Step Three: JavaScript Files and Structure</a></h3> 
+<p>There are two JavaScript files that need to be inserted into the <span class="code">&#60head&#62 &#60/head&#62 </span> section of your page in order for the form to work correctly.</p>
+<p>The JS Library if you haven't already included the it on your website already:</p>
+<span class="code">&#60script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"&#62&#60/script&#62 </span></p>
+<p>The EasyForm JavaScript file, include this anywhere in your <span class="code">&#60head&#62</span> section:</p>
+<p><span class="code">&#60script src="form/form.js" type="text/javascript"&#62&#60/script&#62 </span></p>
+<p><strong class="note">Please note:</strong> Be sure to update the path to /form.js if need be!</p>
+
+<h3><a name="3d">Step Four: PHP File and Explanation</a></h3>
+<p>If you just want to get the form working there's only one change you need to make to the submit.php file. On <strong>line 4</strong> enter your email address where it asks</p>
+<p><img style="display:block;" src="readme_images/php.png"></p>
+<p>Save the file and upload</p>
+
+<h3><a name="3e">Step Five: Optional Responsive CSS</a></h3>
+<p>It is recommended that you know the basics of RWD (Responsive Web Design) before attempting this as the form will only respond to screen sizes if the webpage it's placed on is responsive already.
+<p>Start by copying and pasting <strong>line 6</strong> into your head section of your web page.</p>
+<img style="display:block;" src="readme_images/responsive-1.png"><br/>
+<p>Copy and paste the CSS from <strong>line 233 to line 579</strong>, including the media queries, into your own CSS file at the very bottom of your file</p>
+<p><strong class="note">Please note:</strong> If you are already using a mobile stylesheet you'll need to ensure the break points of the Easy Form mobile CSS remain the same unless you modify the dimensions of the form to suit your own breaking point rules. If you were to simply paste the queries in, disregarding the breaking points of the contact form it may not resize when needed.</p>
+<img style="display:block;" src="readme_images/responsive-2.png"><br/>
+
+<h2><a name="4">Credits and Sources</a></h2>
+<p><strong>JS Library</strong> - Pretty standard and popular JS Library, used for the JS side of the form (animation etc)</p>
+<p><strong>PHPMailer</strong> - The mainframe of the form, this script ensures the PHP validations are secure and valid</p>
+
+<h2><a name="5">FAQ</a></h2>
+<h3>I need help!</h3>
+<p>No problem! Just drop me an email at <a href="mailto:hello@davidpottrell.co.uk">hello@davidpottrell.co.uk</a> I'll be more than happy to help. I always aim to get back to you within a day or at the very least the following day.</p>
+
+<h3>What are the requirements of the Easy Form?</h3>
+<p>Easy Form requires PHP5, GD Library and the jQuery library. FreeType is also required solely for the captcha text.</p>
+
+<h3>The success/error message appears too high on the page - Why?</h3>
+<p>The reason for this is the offset. The offset exists so that if you're using a fixed header, the messages can appear under it. If you wish to change/remove the offset, change the offset inside form.js where <span class="code">.offset().top - 0;</span> occurs - Simply change it to <span class="code">.offset().top - 70px;</span> or whatever height you wish.</p>
+
+<h3>The image captcha doesn't load</h3>
+<p>Be sure you are viewing the uploaded version of your form. The captcha uses server-side language so it can only be viewed online. Also ensure your path to the font the captcha is using is correct.</p>
+
+<h3>The form doesn't look right in certain browsers</h3>
+<p>If you're finding the form isn't working correctly or certain elements are not functioning, try adding HTML5 support to the browser. You can do his by including the following line into your <span class="code">&#60head&#62 &#60/head&#62 </span> section:</p>
+<p class="code">&#60script src="http://html5shim.googlecode.com/svn/trunk/html5.js">&#60/script></p>
+
+<h3>I want an extra field on the form, how do I add validations?</h3>
+<p>Depending on the sort of validation you're after, easy! Lets say you want to add the company field and have a minimum and maximum length.</p>
+<p class="indent"><strong>Step 1:</strong> Open up your web page that contains the HTML form and add your new field (make sure you call it something unique, in this case Company) Save your file and open up form.js and submit.php
+<p class="indent"><strong>Step 2:</strong> In your form.js file - you should see some //headings that describes the code below it.
+<p class="indent"><strong>Step 3:</strong> Find and Copy the variable:<br/>
+<span class="code">var i_name = $("input#name").val();</span> <strong>(Line 44)</strong><br/>
+and replace <span class="code">i_name</span> and <span class="code">input#name</span> with your new fields name<br/>
+ - Paste this in the same order as your form.</p>
+<p class="indent"><strong>Step 4:</strong> Next we want to call this variable and validate its length. To do this, copy the name validation and modify it to check your new field:</p>
+<p class="indent code">if (i_<span style="color:red;">YOUR_FIELD_NAME</span>.length < 2)<br/>
+        errors = errors + "<span style="color:red;">YOUR_FIELD_NAME</span> field is too short or empty";</p>
+
+<p class="indent code">if (i_<span style="color:red;">YOUR_FIELD_NAME</span>.length > 21)<br/>
+        errors = errors + "<span style="color:red;">YOUR_FIELD_NAME</span> field is too long";</p>
+<p class="indent"><strong>Step 5:</strong> Change the numbers to suit your needs, 2 being the minimum, 21 being the maximum.</p>
+<p class="indent"><strong>Step 6:</strong> In your submit.php file the steps are very similar. If you have any queries regarding this feel free to contact me.</p>
+<p class="indent"><strong>Step 7:</strong> Save your file and upload</p>
+
+<h3>When I try to send the form nothing happens</h3>
+<p>Are you testing the form online or offline? PHP is a server-side language, meaning it needs to be uploaded to a server for it to function and in this case, send the form.</p>
+
+<h3>Can I use this form on WordPress</h3>
+<ul>
+<li><p>EasyForm hasn't been designed for WordPress so unfortunately no admin GUI exists, however it is still possible to use the form in WordPress.</p></li>
+<li><p>If you're using one theme, place the form files inside your theme directory and ensure all paths are correct (wp-content/themes/yourtheme/form/..).</p></li>
+<li><p>Duplicate your themes page.php and rename it form.php then place the contents of index.html inside the page.</p></li>
+<li><p>Update the paths to the form files inside page.php and form.js.</p></li>
+<li><p>Create a new page that uses the form.php template and you're done!</p></li>
+</ul>
+
+<h2><a name="6">Changes</a></h2>
+<ul>
+<strong>08/12/2013</strong>
+<li>Those pesky spelling mistakes are gone</li>
+<li>Slight font location changes to image.php</li>
+<li>Removed duplicate 'contacted by' from submit.php</li>
+</ul>
+<ul>
+<strong>18/09/2013</strong>
+<li>New theme</li>
+<li>Responsive CSS</li>
+<li>Removed redundant code</li>
+</ul>
+<ul>
+<strong>05/07/2013</strong>
+<li>Bugfix for Internet Explorer and Firefox where success/error messages would ignore the offset.</li>
+<li>Modified CSS padding for <span class="code">#verify</span> to <span class="code">8px</span> to ensure text isn't cut off in Internet Explorer.</li>
+<li>Expanded FAQ regarding offset and image captcha</li>
+</ul>
+<ul>
+<strong>01/07/2013</strong>
+<li>Revamped the support documents to help users install</li>
+</ul>
+</div>
+</section>
+</body>	
+</html>:

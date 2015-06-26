@@ -1,0 +1,146 @@
+/*
+ * ===================================
+ * Icons
+ * 
+ * includes: Circle icons, Square icons, Colors of Icons
+ * ===================================
+ * */
+
+/* Space for icon */
+.i-width,
+.i-width-sm {
+    margin: auto;
+    text-align: center;
+}
+.i-width {
+    width: 25px;
+}
+.i-width-sm {
+    width: 13px;
+}
+
+/* Basic Colors of icons */
+
+.i-primary i {
+    color: @primary;
+}
+.i-success i {
+    color: @success;
+}
+.i-danger i {
+    color: @danger;
+}
+.i-info i {
+    color: @info;
+}
+.i-warning i {
+    color: @warning;
+}
+  
+/* Small Circle Icons - social, share */
+.circle-icons {
+    i {
+        @size: 35px;
+        width: @size;
+        height: @size;
+        line-height: @size;
+        text-align: center;
+        border-radius: 50%;
+        color: @primary;
+        font-size: 13px @i;
+        background: #fff;
+        background: fade(#fff, 90%);
+        box-shadow: 0px 1px 5px fade(#000, 15%);
+        .transition(all 0.5s ease-out);
+    }
+    li:hover i {
+        background: @primary;
+        color: #fff;
+    }
+}
+
+/* Dark social icons - for footer */
+.dark-icons {
+    margin: 0;
+    i {
+        @size: 35px;
+        color: @color4;
+        height: @size;
+        width: @size;
+        font-size: 13px;
+        line-height: @size;
+        text-align: center;
+        background: @color3;
+        border-radius: 50%;
+        margin: 0 3px;
+        &:hover {
+            color: @primary;
+        }
+    }
+}
+
+h1 i:before,
+h2 i:before,
+h3 i:before,
+h4 i:before,
+h5 i:before,
+button > i:before,
+.btn > i:before {
+    margin-right: 5px;
+}
+.fa-long-arrow-right:before {
+    margin-left: 5px;
+}
+
+/* Button only with icon */
+i.only-i:before,
+.only-i i:before {
+    margin-right: 0;
+}
+
+/* Margin for icon in button */
+.btn i:before,
+button i:before {
+    margin-right: 5px;
+}
+.btn .fa-angle-double-right:before,
+button .fa-angle-double-right:before {
+    margin-left: 5px;
+}
+.only-icon i:before {
+    margin-right: 0 @i;
+    margin-left: 0 @i;
+}
+
+
+/*
+ * ===================================
+ * Icons Cover
+ * 
+ * includes: blue icon, circle border icon
+ * ===================================
+ * */
+
+/* using on pricing tables page */
+
+.icon-u {
+    @size: 100px;
+    color: @primary;
+    border-radius: 50%;
+    height: @size;
+    width: @size;
+    line-height: 100px @i;
+    background: #fff;
+    font-size: @size / 2 @i;
+    border: 1px solid fade(#000, 5%);
+    box-shadow: 0 -3px 10px fade(#000, 15%);
+    display: inline-block;
+}
+
+/* background large icons */
+.icon-bg {
+    font-size: 250px @i;
+    color: @color3;
+    text-align: center;
+    display: block @i;
+}

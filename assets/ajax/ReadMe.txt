@@ -1,0 +1,1 @@
+Files in these folders are needed for loading latest news and work/projects by AJAX.

@@ -1,0 +1,360 @@
+/*
+ * ===================================
+ * Style Switcher 
+ * ===================================
+ * */
+
+.switcher-icon {
+    position: absolute;
+    left: 259px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: 24px @i;
+    .border-radius-right(5px);
+    background: @grey200;
+    .transition(all 0.35s ease-in-out);
+    line-height: 52px @i;
+    z-index: 205;
+    box-shadow: 2px 2px 3px fade(#000, 15%);
+    .transform(translateX(-100%) @i);
+    &.show-it {
+        .transform(translateX(0%) @i);
+    }
+}
+.style-switcher {
+    @transition: all 500ms ease-in-out;
+    position: fixed;
+    @media (min-width: 768px) {
+        top: 250px;
+    }
+    @media (max-width: 767px) {
+        top: 120px;
+    }
+    left: 0;
+    right: auto;
+    z-index: 201;
+    .transform(translate(-100%, 0%));
+    .transition(@transition);
+    .body {
+        background: #fff;
+        padding: 20px 15px 15px;
+        position: relative;
+        z-index: 202;
+        .transition(@transition);
+        width: 259px;
+        visibility: hidden;
+        h4 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: @grey500;
+            margin-top: 0;
+            text-transform: @text-up;
+        }
+    }
+    .colors {
+        margin: 0 auto;
+        padding: 0;
+        li {
+            list-style: none;
+            height: 35px;
+            width: 35px;
+            margin: 0 4px 4px;
+            display: inline-block;
+            border-radius: @border-radius;
+            cursor: pointer;
+        }
+    }
+}
+.bg-icon-1, .bg-icon-2, .bg-icon-3, .bg-icon-4, .bg-icon-5, .bg-icon-6 {
+    background-size: cover;
+}
+.bg-icon-1 {
+    background: url("@{base-url}patterns/xs/footer_lodyas.png");
+}
+.bg-icon-2 {
+    background: url("@{base-url}patterns/xs/sativa.png");
+}
+.bg-icon-3 {
+    background: url("@{base-url}patterns/xs/crossword.png");
+}
+.bg-icon-4 {
+    background: url("@{base-url}patterns/xs/geometry2.png");
+}
+.bg-icon-5 {
+    background: url("@{base-url}patterns/xs/greyzz.png");
+}
+.bg-icon-6 {
+    background: url("@{base-url}patterns/xs/subtle_white_feathers.png");
+}
+.bg-icon-7 {
+    background: url("@{base-url}patterns/xs/brickwall.png");
+}
+.bg-icon-8 {
+    background: url("@{base-url}patterns/xs/geometry.png");
+}
+.bg-icon-9 {
+    background: url("@{base-url}patterns/xs/pattern1.png");
+}
+.bg-icon-10 {
+    background: url("@{base-url}patterns/xs/pattern2.jpg");
+}
+body.wrap-width {
+    background: url("@{base-url}patterns/crossword/crossword.png");
+    background-repeat: repeat;
+    background-attachment: fixed @i;
+}
+.i-close {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    &:after {
+        .transform(rotate(45deg));
+    }
+    &:before {
+        .transform(rotate(-45deg));
+    }
+    &:after, &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 35px;
+        width: 2px;
+        background: @blueGrey600;
+        top: 8px;
+        right: 24px;
+    }
+}
+.active {
+    &.style-switcher {
+        box-shadow: 2px 2px 3px fade(#000, 15%);
+        .transform(translate(0%, 0%));
+        .body {
+            visibility: visible;
+            height: 100%;
+        }
+    }
+    .switcher-icon {
+        background: @grey100;
+    }
+}
+/* wide / boxed */
+
+.wrap-width {
+    @media (min-width: 1300px) {
+        @width: 1170px;
+        .forcefullwidth_wrapper_tp_banner, .tp-banner-container, .navbar, .container, #page-wrap {
+            width: @width @i;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1299px) {
+        @width: 970px;
+        .forcefullwidth_wrapper_tp_banner, .tp-banner-container, .navbar, .container, #page-wrap {
+            width: @width @i;
+        }
+    }
+    @media (max-width: 991px) {
+        .forcefullwidth_wrapper_tp_banner, .tp-banner-container, .navbar, .container, #page-wrap {
+            width: 100% @i;
+        }
+    }
+    #page-wrap {
+        position: relative;
+        margin: 0 auto;
+        box-shadow: 0 0 5px fade(#000, 20%);
+    }
+    .navbar {
+        margin: 0 auto;
+    }
+    .tp-banner-container {
+        left: 50% @i;
+        .transform(translateX(-50%));
+    }
+    .tp-leftarrow.tparrows.default.preview4 {
+        left: 0 @i;
+    }
+    .tp-rightarrow.tparrows.default.preview4 {
+        right: 0 @i;
+    }
+}
+#red {
+    background-color: @red400;
+}
+#pink {
+    background-color: @pink400;
+}
+#deepPurple {
+    background-color: @deepPurple400
+}
+#indigo {
+    background-color: @indigo400;
+}
+#blue {
+    background-color: @blue400;
+}
+#lightBlue {
+    background-color: @lightBlue500;
+}
+#cyan {
+    background-color: @cyan500;
+}
+#teal {
+    background-color: @teal500;
+}
+#green {
+    background-color: @green500;
+}
+#lightGreen {
+    background-color: @lightGreen500;
+}
+#lime {
+    background-color: @lime600;
+}
+#yellow {
+    background-color: @yellow700;
+}
+#amber {
+    background-color: @amber500;
+}
+#orange {
+    background-color: @orange500;
+}
+#deepOrange {
+    background-color: @deepOrange500;
+}
+@-webkit-keyframes colorAnimation {
+    0% {
+        color: @red400;
+    }
+    5% {
+        color: @pink400;
+    }
+    10% {
+        color: @deepPurple400
+    }
+    15% {
+        color: @indigo400;
+    }
+    20% {
+        color: @blue400;
+    }
+    25% {
+        color: @lightBlue500;
+    }
+    30% {
+        color: @cyan500;
+    }
+    35% {
+        color: @teal500;
+    }
+    40% {
+        color: @green500;
+    }
+    45% {
+        color: @lightGreen500;
+    }
+    50% {
+        color: @lime600;
+    }
+    55% {
+        color: @yellow700;
+    }
+    60% {
+        color: @amber500;
+    }
+    65% {
+        color: @orange500;
+    }
+    70% {
+        color: @deepOrange500;
+    }
+    75% {
+        color: #795548;
+    }
+    80% {
+        color: #9E9E9E;
+    }
+    85% {
+        color: #607D8B;
+    }
+    90% {
+        color: #546E7A
+    }
+    95% {
+        color: #455A64;
+    }
+    100% {
+        color: #263238;
+    }
+}
+@keyframes colorAnimation {
+    0% {
+        color: @red400;
+    }
+    5% {
+        color: @pink400;
+    }
+    10% {
+        color: @deepPurple400
+    }
+    15% {
+        color: @indigo400;
+    }
+    20% {
+        color: @blue400;
+    }
+    25% {
+        color: @lightBlue500;
+    }
+    30% {
+        color: @cyan500;
+    }
+    35% {
+        color: @teal500;
+    }
+    40% {
+        color: @green500;
+    }
+    45% {
+        color: @lightGreen500;
+    }
+    50% {
+        color: @lime600;
+    }
+    55% {
+        color: @yellow700;
+    }
+    60% {
+        color: @amber500;
+    }
+    65% {
+        color: @orange500;
+    }
+    70% {
+        color: @deepOrange500;
+    }
+    75% {
+        color: #795548;
+    }
+    80% {
+        color: #9E9E9E;
+    }
+    85% {
+        color: #607D8B;
+    }
+    90% {
+        color: #546E7A
+    }
+    95% {
+        color: #455A64;
+    }
+    100% {
+        color: #263238;
+    }
+}
+@media (min-width: 768px) {
+    .colorAnimation {
+        .animation(colorAnimation 20s infinite linear alternate);
+    }
+}

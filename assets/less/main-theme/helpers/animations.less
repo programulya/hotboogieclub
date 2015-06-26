@@ -1,0 +1,40 @@
+/*
+ * ===================================
+ * Animations
+ * ===================================
+ * */
+ 
+/* easeUp */
+@keyframes easeUp {
+    0% {
+        opacity: 0;
+        .transform(translate(0%, 35px));
+    }
+    100% {
+        opacity: 1;
+        .transform(translate(0%, 0px));
+    }
+}
+.easeUp {
+    animation-name: easeUp;
+}
+
+/* easeFade */
+@keyframes easeFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.easeFade {
+    animation-name: easeFade;
+    animation-duration:500ms;
+}
+.animation {
+    visibility: hidden;
+}
+.slideUp.animation, .slideDown.animation, .slideLeft.animation, .slideRight.animation, .slideExpand.animation, .expandUp.animation, .fadeIn.animation, .expandOpen.animation, .bigEntrance.animation, .hatch.animation, .bounce.animation, .pulse.animation, .floating.animation, .tossing.animation, .pullUp.animation, .pullDown.animation, .strechLeft.animation, .strechRight.animation {
+    visibility: visible;
+}

@@ -1,0 +1,105 @@
+/*
+ * ===================================
+ * Small Components
+ * * ===================================
+ * */
+/* === Knobs === */
+
+.knobs {
+    text-align: center;
+    div h3, div h2 {
+        margin-top: -35px;
+        color: @grey600;
+    }
+}
+
+.tp-banner-container { 
+    position: relative @i;
+    overflow: hidden @i;
+    max-height: 700px @i;
+    max-width: 100% @i;
+}
+/* === Google Maps === */
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+/* === Alerts === */
+
+.alert {
+    .text-success, .text-primary, .text-warning, .text-danger, .text-info {
+        color: #fff;
+    }
+    .close {
+        opacity: 0.9;
+        color: #fff;
+        text-shadow: none;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+/* Footer */
+
+.footer {
+    text-align: center;
+    background: @color2;
+    color: @color5;
+    padding: 20px 0;
+}
+/* Modal window */
+
+.modal-body {
+    padding: 25px;
+}
+/* Panel Default */
+
+.panel-default {
+    border-color: @grey200;
+}
+/* Thumbnail */
+
+.thumbnail {
+    padding: 0;
+    .caption {
+        padding: 20px;
+        h3 {
+            font-weight: 300;
+        }
+    }
+}
+/* Tab content - media queries */
+
+@media (max-width: 991px) {
+    #features .centerY {
+        top: auto;
+        .transform(none);
+    }
+}
+/* contact box */
+
+.contact-box {
+    @media (max-width: 767px) {
+        li, .btn {
+            display: block;
+            width: 100%;
+        }
+        li:not(last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.panel-group#accordion .panel-body {
+    .title-sm-v2 {
+        font-weight: 400;
+    }
+    span {
+        font-size: 14px;
+    }
+}

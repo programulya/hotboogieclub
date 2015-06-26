@@ -1,0 +1,277 @@
+/*
+ * ===================================
+ * Content Boxes
+ * 
+ * includes: content box
+ * ===================================
+ * */
+
+/* Thumbnail */
+
+.thumbnail {
+    border: none;
+    box-shadow: 0 2px 5px fade(#000, 14%);
+}
+
+/* Simple box - for Testimonial */
+
+.content-box {
+    padding-bottom: 50px;
+    overflow: hidden;
+    > .body {
+        overflow: hidden;
+    }
+        p {
+            font-style: italic;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 300;
+			color: @color5;
+    }
+    h4 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-weight: 400;
+        font-size: 15px;
+        color: @color1;
+        > em {
+            color: @color5;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+    }
+    > .profile,
+    > img {
+        height: 80px;
+        border-radius: 50%;
+        width: 80px;
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+
+/*
+ * ===================================
+ * Hover Content Boxes
+ * 
+ * includes: Slide from top and from bottom
+ * ===================================
+ * */
+
+
+/* === Portfolio Item - top animation with link to somethink and bottom animation with title of a project, work or somethink === */
+.grid-portfolio {
+	text-align: center;
+	.hover-content {
+		max-width: 360px;
+		max-height: 270px;
+		margin: auto;
+	} 
+}
+
+.hover-content:hover .top-part,
+.hover-content:hover .bottom-part {
+    .transform(translate(0%, 0%));
+    opacity: 1; 
+}
+.bottom-part,
+.top-part {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    .transition(all 0.3s ease-out);
+    opacity: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.top-part {
+    top: 0;
+    height: 79%;
+    background: fade(@primary, 60%);
+    color: #fff;
+    .transform(translate(0%, -100%));
+    i {
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .transform(translate(-50%, -50%));
+    }
+}
+.bottom-part {
+    height: 21%;
+    background: @grey100;
+    .transform(translate(0%, 100%));
+    h3 {
+        margin: 0;
+        color: @grey600;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .transform(translate(-50%, -50%));
+    }
+}
+.bg-grey-1,
+.bg-grey {
+    .bottom-part {
+        background: #fff;
+         h3 {
+            color: @grey500;
+        }
+    }
+}
+
+/* === Profile rotateY - using on the Our Team page === */
+
+.profile {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-open {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding: 15px;
+    max-width: 450px;
+    background: #fff;
+    background: fade(#fff, 50%);
+    .transform(rotateX(0deg) rotateY(-180deg));
+    .transition(all 0.5s ease-out);
+    .backface-visibility(hidden);
+    small,
+    p,
+    h3 {
+        text-align: center;
+        color: @grey900;
+    }
+    p {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+    }
+     h3 {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
+    }
+}
+.hover-content:hover .content-open {
+    opacity: 1;
+    .transform(rotateX(0deg) rotateY(0deg));
+}
+
+/* Zoom profile - using on the Our Team page */
+
+@media (min-width: 992px) {
+    .team-grid .row:not(:last-child) .profile-circle {
+        margin-bottom: 75px;
+    }
+}
+@media (max-width: 992px) {
+    .team-grid .profile-circle {
+        margin-bottom: 75px;
+    }
+}
+.profile-circle {
+    max-width: 450px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    > hr {
+        max-width: 80px;
+        border-color: @grey300;
+        margin-top: 18px;
+        margin-bottom: 15px;
+    }
+    > p,
+    > h3 {
+        margin-bottom: 0;
+    }
+    > p {
+        color: @grey500;
+        max-height: 80px;
+        overflow: hidden;
+    }
+    > button {
+        background: none;
+        margin: 5px auto auto auto;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 300;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        font-size: 14px;
+        color: @grey600;
+    }
+    &:hover button {
+        color: @primary;
+    }
+    .hover-content {
+        .hover-content;
+        border-radius: 50%;
+        max-width: 200px;
+        max-height: 200px;
+        margin: auto;
+    }
+}
+.content-circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding: 15px 8px;
+    background: #fff;
+    background: fade(#fff, 50%);
+    .transform(scale(0.2));
+    .transition(all 0.35s ease);
+    max-width: 450px;
+    border-radius: 50%;
+}
+.profile-circle:hover .content-circle {
+    opacity: 1;
+    .transform(scale(1));
+}
+.content-center .circle-icons {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    .transform(translate(-50%, -50%));
+    width: 100%;
+}
+
+/* faces */
+
+.profile-1 {
+    background-image: url("@{base-url}faces/1.jpg");
+}
+.profile-2 {
+    background-image: url("@{base-url}faces/2.jpg");
+}
+.profile-3 {
+    background-image: url("@{base-url}faces/3.jpg");
+}
+.profile-4 {
+    background-image: url("@{base-url}faces/4.jpg");
+}
+.lg-size.profile {
+    height: 200px;
+    width: 200px;
+}
+.xs-size.profile {
+    height: 100px;
+    width: 100px;
+}
+.profile {
+    .background-size(cover);
+    background-position: center center;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}

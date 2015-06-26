@@ -1,0 +1,147 @@
+/*
+ * ===================================
+ *  Pricing Tables 
+ * 
+ * includes: 3 types of pricing tables
+ * ===================================
+ * */
+
+.first,
+.last,
+.middle {
+    position: relative;
+}
+
+.last,
+.first {
+    z-index: 1;
+}
+
+.middle {
+    z-index: 2;
+}
+/* Pricing tables - version 1 */
+
+.panel.prices-v1,
+.panel.prices {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.panel.prices-v1,
+.panel.prices {
+    border-color: transparent;
+}
+
+.bg-primary.panel.prices-v1,
+.bg-primary.panel.prices {
+    border-color: @primary;
+}
+
+.prices-v1 .panel-body,
+.prices .panel-body {
+    padding: 25px;
+}
+
+.ribbon {
+    background: #fff;
+    color: @primary;
+    position: absolute;
+    top: 25px;
+    left: -28px;
+    .transform(rotate(-45deg));
+    line-height: 24px;
+    height: 25px;
+    z-index: 3;
+    width: 130px;
+}
+
+.val {
+    color: @primary;
+    font-size: 50px;
+    margin: 20px 0;
+    small {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+.bg-primary .val small,
+.bg-primary .val {
+    color: #fff;
+}
+/* Pricing tables - version 2 */
+
+.prices-v1 .name {
+    margin: 5px 0;
+    font-size: 40px;
+}
+
+.val-v1 {
+    color: @primary;
+    font-size: 45px;
+    margin: 10px 0 25px;
+    small {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+/* Pricing Tables - Minimalistic Style */
+
+.type {
+    font-size: 2em;
+    color: @grey600;
+    margin: 15px 0 30px;
+}
+
+.price {
+    font-size: 6em;
+    line-height: 100px;
+    margin: 20px 0 0;
+}
+
+.month {
+    color: @grey600;
+    text-transform: @text-up;
+    font-weight: 300;
+}
+
+.details {
+    font-size: 1.5em;
+    margin: 25px 0 10px;
+}
+/* Prices - Media Queries */
+
+@media (max-width: 768px) {
+    .prices,
+    .last.prices,
+    .middle.prices {
+        margin-bottom: 30px;
+    }
+    .first.prices {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .first.prices-v1,
+    .first.prices {
+        left: 80px;
+    }
+    .last.prices-v1,
+    .last.prices {
+        right: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .prices-v3.panel {
+        max-width: 360px;
+    }
+}

@@ -1,0 +1,26 @@
+/* === Back To Top === */
+
+.back-to-top {
+    @size: 45px;
+    position: fixed;
+    bottom: 3%;
+    right: 2.5%;
+    display: none;
+    z-index: 998;
+    height: @size;
+    width: @size;
+    text-align: center;
+    border-radius: 50%;
+    color: @primary;
+    font-size: @size * 0.6666667;
+    background: #fff;
+    box-shadow: 0 1px 2px 1px fade(#000, 10%);
+    .transition(all 0.5s ease-out);
+    &:hover {
+        color: @grey600;
+    }
+    &:focus, &:active {
+        color: #fff;
+        background: @primary;
+    }
+}

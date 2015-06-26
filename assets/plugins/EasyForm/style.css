@@ -1,0 +1,579 @@
+/*-----DEMO CSS CODE STARTS HERE // FORM CODE IS BELOW-----*/
+html {margin:0;padding:0;height:100%;}
+body {
+font-family: 'Source Sans Pro', sans-serif;
+font-size:100%;
+line-height:1.5em;
+font-weight:300;
+background: url(form/bg.jpg);
+background-attachment: fixed;
+background-position: 50% 50%;
+background-size: cover;
+color:#090909;
+margin:0;
+}
+
+a,a:link,a:active,a,a:active,a:visited {
+color:#3498db;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+text-decoration:none;
+}
+
+h1 {
+font-size: 2.75em;
+line-height: 1.4em;
+font-weight:300;
+margin: 0;
+color:#FFF;
+display:inline-block;    
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+padding: 0 0 10px 0;
+margin: 0 0 20px 0;
+}
+
+h2 {
+font-size: 1.25em;
+font-weight:300;
+margin: 0;
+color:#FFF; 
+}
+
+p {font-size: 1.1em;line-height:1.6em;margin-bottom:15px;}
+strong {font-weight:700;}
+hr {border:1px solid #cecece;border-bottom:0px;margin:25px 0;}
+
+#container {
+width: 55%;
+margin: 25px auto;
+max-width: 745px;
+min-width: 745px;
+-webkit-box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+-moz-box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+}
+
+#header {
+padding: 15px 35px;
+display: block;
+background: #3498db;
+margin: auto;
+height: 175px;
+opacity: .9;
+}
+
+#content {
+padding: 15px 35px;
+display: block;
+background: #FFF;
+}
+
+.wrapper {
+background: #140600;
+color: #FFF;
+opacity: .8;
+}
+
+.wrap {
+width: 665px;
+margin: auto;
+text-align: center;
+padding: 5px;
+line-height: 1.25em;
+}
+
+.wrap a:hover {
+color:#FFF;
+}
+
+
+
+/*-----COPY CODE BELOW INTO YOUR EXISTING STYLESHEET-----*/
+#form {
+width: 100%;
+}
+
+/*-----error/success messages-----*/
+#error {
+display:none;
+background: #e74c3c;
+color:#FFF;
+padding:25px;
+margin-bottom: 25px;
+}
+
+#success{
+display:none;
+background: #2ecc71;
+color:#FFF;
+padding:25px;
+margin-bottom: 25px;
+}
+
+/*-----form elements-----*/
+#easy {
+float:left;
+max-width: 675px;
+margin: auto;
+}
+
+#easy .input {
+width: 100%;
+float: left;
+max-width: 325px;
+margin: 0 0 20px 0;
+}
+
+#easy .textarea {
+width: 100%;
+margin: 0 0 15px 0;
+max-width: 675px;
+}
+
+#easy .last {
+float: right;
+}
+
+#easy input.text, 
+#easy textarea {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:300;
+font-size:1em;
+padding: 8px 8px;
+border: 1px solid #cecece;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+float: left;
+margin: 0;
+outline: none;
+}
+
+
+#easy input[type=text]:focus, 
+#easy input[type=tel]:focus, 
+#easy textarea:focus {
+margin-right: 0px;
+box-shadow: 0 0 3px rgba(52, 152, 219, 1);
+border: 1px solid rgba(52, 152, 219, 1);
+}
+
+#easy input:hover,  
+#easy textarea:hover {
+border: 1px solid #3498db;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+#easy textarea {
+height: 200px;
+}
+
+#easy span {
+color:red;
+}
+
+#easy .verification {
+width: 100%;
+height: 42px;
+float: left;
+}
+
+#easy #vimage {
+width: 99px;
+height: 42px;
+float: left;
+}
+
+#easy .refresh {
+width: 42px;
+height: 42px;
+display: block;
+float: left;
+margin: 0 7px;
+border:0;
+}
+
+#easy #verify {
+width: 145px;
+height: 40px;
+float: left;
+margin: 0;
+padding:8px;
+}
+
+#easy button {
+float: right;
+display: block;
+width: 125px;
+background: #3498db;
+padding: 12px 20px 7px !important;
+color: #fff;
+box-shadow: 0 7px 0 #007dbd;
+text-align: center;
+margin:0;
+border:0;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+cursor:pointer;
+}
+
+#easy button:hover {
+background: #0064a2;
+box-shadow: 0 7px 0 #004c87;
+}
+
+/*-----OPTIONAL RESPONSIVE STYLES BELOW - MAY BREAK UNDER DIFFERENT MIN-WIDTH/MAX-WIDTH CONDITIONS
+-------If you would like to use the responsive stylesheet it's recommended to use the breaking points already 
+-------set to prevent the form elements breaking-------*/
+
+@media only screen and (min-width : 110px) and (max-width : 319px) {
+/*-----responsive demo elements start here - form elements further down-----*/
+h1 {
+font-size: 1.75em;
+line-height: 1em;
+padding: 0 0 10px 0;
+margin: 0 0 10px 0;
+}
+
+h2 {
+font-size: 1em;
+}
+
+#container {
+width: 95%;
+min-width: 0;
+}
+
+#header {
+padding: 15px;
+height: 150px;
+}
+
+#content {
+padding: 15px 15px 22px 15px;
+}
+
+.wrap {
+width: auto;
+padding: 5px;
+line-height: 1.25em;
+}
+
+/*-----responsive form elements start here-----*/
+#error {
+padding: 5px;
+}
+
+#success{
+padding: 5px;
+}
+
+#easy .input {
+/* max-width: 100%; */
+}
+
+#easy .verification {
+height: auto;
+}
+
+#easy #vimage {
+width: 99px;
+height: 42px;
+float: left;
+}
+
+#easy .refresh {
+float: right;
+margin: 0;
+}
+
+#easy #verify {
+width: 100%;
+margin: 25px 0;
+}
+
+#easy button {
+float: right;
+width: 125px;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width : 419px) {
+/*-----responsive demo elements start here - form elements further down-----*/
+h1 {
+font-size: 2em;
+line-height: 1em;
+padding: 0 0 15px 0;
+margin: 0 0 15px 0;
+}
+
+h2 {
+font-size: 1.1em;
+}
+
+#container {
+width: 93%;
+min-width: 0;
+}
+
+#header {
+height: 150px;
+padding: 15px;
+}
+
+#content {
+padding: 15px 15px 22px 15px;
+}
+
+.wrap {
+width: auto;
+padding: 5px;
+line-height: 1.25em;
+}
+
+/*-----responsive form elements start here-----*/
+#error {
+padding: 10px;
+}
+
+#success{
+padding: 10px;
+}
+
+#easy .input {
+max-width: 100%;
+}
+
+#easy .verification {
+height: auto;
+}
+
+#easy #vimage {
+width: 99px;
+height: 42px;
+float: left;
+}
+
+#easy .refresh {
+float: right;
+margin: 0;
+}
+
+#easy #verify {
+width: 100%;
+margin: 25px 0;
+}
+
+#easy button {
+float: right;
+width: 125px;
+}
+}
+
+@media only screen and (min-width: 420px) and (max-width : 519px) {
+/*-----responsive demo elements start here - form elements further down-----*/
+h1 {
+font-size: 2.25em;
+line-height: 1em;
+padding: 0 0 15px 0;
+margin: 0 0 15px 0;
+}
+
+h2 {
+font-size: 1.2em;
+}
+
+#container {
+width: 91%;
+min-width: 0;
+}
+
+#header {
+height: 150px;
+padding: 15px 20px;
+}
+
+#content {
+padding: 15px 20px 22px 20px;
+}
+
+.wrap {
+width: auto;
+padding: 5px;
+line-height: 1.25em;
+}
+
+/*-----responsive form elements start here-----*/
+#error {
+padding: 15px;
+}
+
+#success{
+padding: 15px;
+}
+
+#easy .input {
+max-width: 100%;
+}
+
+#easy .textarea {
+max-width: 100%;
+}
+
+#easy .verification {
+height: auto;
+}
+
+#easy #vimage {
+width: 99px;
+height: 42px;
+float: left;
+}
+
+#easy .refresh {
+float: right;
+margin: 0;
+}
+
+#easy #verify {
+width: 100%;
+margin: 25px 0;
+}
+
+#easy button {
+float: right;
+width: 125px;
+}
+}
+
+@media only screen and (min-width: 520px) and (max-width : 619px) {
+/*-----responsive demo elements start here - form elements further down-----*/
+h1 {
+font-size: 2.5em;
+line-height: 1em;
+padding: 0 0 15px 0;
+margin: 0 0 15px 0;
+}
+
+h2 {
+font-size: 1.25em;
+}
+
+#container {
+width: 89%;
+min-width: 0;
+}
+
+#header {
+height: 150px;
+padding: 15px 22px;
+}
+
+#content {
+padding: 15px 22px 22px 22px;
+}
+
+.wrap {
+width: auto;
+padding: 5px;
+line-height: 1.25em;
+}
+/*-----responsive form elements start here-----*/
+#error {
+padding: 15px;
+}
+
+#success{
+padding: 15px;
+}
+
+#easy .input {
+max-width: 48%;
+}
+
+#easy .textarea {
+max-width: 100%;
+}
+
+#easy .verification {
+height: auto;
+}
+
+#easy #vimage {
+width: 99px;
+height: 42px;
+float: left;
+}
+
+#easy .refresh {
+float: left;
+}
+
+#easy #verify {
+width: 130px;
+}
+
+#easy button {
+float: right;
+width: 105px;
+}
+}
+
+@media only screen and (min-width: 620px) and (max-width : 819px) {
+/*-----responsive demo elements start here - form elements further down-----*/
+h1 {
+font-size: 2.65em;
+line-height: 1em;
+padding: 0 0 15px 0;
+margin: 0 0 15px 0;
+}
+
+h2 {
+font-size: 1.25em;
+}
+
+#container {
+width: 90%;
+min-width: 0;
+}
+
+#header {
+height: 150px;
+padding: 15px 30px;
+}
+
+#content {
+padding: 15px 30px 22px 30px;
+}
+
+.wrap {
+width: auto;
+padding: 5px;
+line-height: 1.25em;
+}
+
+/*-----responsive form elements start here-----*/
+#error {
+padding: 20px;
+}
+
+#success{
+padding: 20px;
+}
+
+#easy .input {
+max-width: 48%;
+}
+
+#easy .textarea {
+max-width: 100%;
+}
+}

@@ -1,0 +1,98 @@
+/*-----DEMO CSS CODE STARTS HERE // FORM CODE IS BELOW-----*/
+html {margin:0;padding:0;height:100%;}
+body {
+font-family: 'Source Sans Pro', sans-serif;
+font-size:100%;
+line-height:1.25em;
+font-weight:300;
+background: #3498db url(readme_images/bg.jpg);
+background-attachment: fixed;
+background-position: 50% 50%;
+background-size: cover;
+color:#090909;
+margin:0;
+}
+
+a,a:link,a:active,a,a:active,a:visited {
+color:#3498db;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+text-decoration:none;
+font-weight:400;
+}
+
+h1 {
+font-size: 2.75em;
+line-height: 1.4em;
+font-weight:300;
+margin: 0;
+color:#FFF;
+display:inline-block;    
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+padding: 0 0 10px 0;
+margin: 0 0 20px 0;
+}
+
+h2 {
+font-size: 1.75em;
+font-weight:300;
+margin: 0;
+color:#FFF; 
+}
+
+h3 {
+font-size: 1.25em;
+font-weight:400;
+margin: 0;
+color:#212121; 
+}
+
+h3 a {
+color:#212121;
+}
+
+p {font-size: 1.1em;line-height:1.6em;margin: 5px 0 15px 0;}
+strong {font-weight:400;}
+.note {color:#f94710;}
+hr {border:1px solid #cecece;border-bottom:0px;margin:25px 0;}
+
+#container {
+width: 55%;
+margin: 25px auto;
+max-width: 745px;
+min-width: 745px;
+-webkit-box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+-moz-box-shadow: 0 0px 10px 5px rgba(0,0,0,.2);
+}
+
+#header {
+padding: 15px 35px;
+display: block;
+background: #3498db;
+margin: auto;
+height: 175px;
+opacity: .9;
+}
+
+#content {
+padding: 15px 35px;
+display: block;
+background: #FFF;
+}
+
+#content h2 {
+display:inline-block;
+margin:15px 0 5px 0;
+}
+
+.code {
+font-family: "Courier New", Courier, monospace;
+color:#9600ff;
+}
+
+.indent {
+margin-left:50px;
+}

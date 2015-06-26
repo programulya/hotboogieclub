@@ -1,0 +1,276 @@
+.dialog,
+.dialog__overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.dialog {
+	position: fixed;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+    z-index: 1000; 
+}
+
+.dialog__overlay { 
+	position: absolute;
+	z-index: 2000;
+	background: darken(fade(@blueGrey800, 90%), 15%);
+	opacity: 0;
+	.transition(opacity 0.3s);
+	-webkit-backface-visibility: hidden;
+}
+
+.dialog--open .dialog__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dialog__content {
+	min-width: 290px;
+	background: #fff;
+	position: relative;
+	z-index: 5000;
+	opacity: 0; 
+    @media (min-width: 620px) {
+        width: 75%;
+        max-width: 700px;
+    }
+    @media (max-width: 619px) {
+        overflow-x: hidden @i; 
+        overflow-y: scroll @i;
+    }
+}
+
+.dialog--open .dialog__content {
+	pointer-events: auto;
+}
+
+/* Content */
+.dialog h3 {
+	margin: 0;
+	font-size: 30px;
+    font-weight: 300;
+    small {
+        font-weight: inherit;
+        color: @grey600;
+    }
+}
+
+.dialog-body {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    h4 {
+        margin-top: 25px;
+    }
+}
+
+/* dialog effect - Wilma */
+.dialog--open .dialog__overlay {
+	.transition-duration(0.8s);
+}
+
+.dialog--close .dialog__overlay {
+	.transition-duration(0.5s);
+}
+
+.dialog__content {
+	padding: 0;
+	background: transparent;
+}
+
+.dialog.dialog--open .dialog__content {
+	opacity: 1;
+}
+
+.morph-shape {
+	position: absolute;
+	width: ~"calc(100% + 4px)";
+	height: ~"calc(100% + 4px)";
+	top: -2px;
+	left: -2px;
+	z-index: -1;
+    svg rect {
+        stroke: #fff;
+        stroke-width: 2px;
+        stroke-dasharray: 1680;
+    }
+}
+@media (min-width: 768px) {
+    .dialog--open .morph-shape svg rect {
+        .animation(anim-dash 0.6s forwards);
+    }
+}
+
+.dialog-inner {
+	opacity: 0;
+	background: #fff;
+}
+
+.dialog--open .dialog-inner {
+	opacity: 1;
+	.transition(opacity 0.85s 0.35s);
+    @media (min-width: 620px) {
+        padding: 4em;
+    }
+    @media (max-width: 619px) {
+        padding: 2em;
+    }
+} 
+ 
+@media (min-width: 768px) {
+    .dialog.dialog--open h3 {
+	.animation(anim-elem-1 0.35s 0.30s ease-out both);
+    }
+
+    .dialog.dialog--open .first.text-block {
+        .animation(anim-elem-1a 0.35s 0.35s ease-out both);
+    }
+
+    .dialog.dialog--open h4 {
+        .animation(anim-elem-1b 0.35s 0.40s ease-out both);
+    }
+
+    .dialog.dialog--open .second.text-block {
+        .animation(anim-elem-1c 0.35s 0.45s ease-out both);
+    }
+
+    .dialog.dialog--open button {
+        .animation(anim-elem-2 0.35s 0.50s ease-out both);
+    }
+}
+@keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+/* Inner elements animations */
+
+@-webkit-keyframes anim-elem-1 {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+        transform: translate3d(0, 50px, 0); }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+        transform: translate3d(0, 0, 0); 
+    }
+}
+
+@keyframes anim-elem-1 {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+        transform: translate3d(0, 50px, 0); }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+        transform: translate3d(0, 0, 0); 
+    }
+}
+
+@-webkit-keyframes anim-elem-1a {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+    }
+}
+
+@keyframes anim-elem-1a {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+    }
+}
+
+@-webkit-keyframes anim-elem-1b {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+    }
+}
+
+@keyframes anim-elem-1b {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+}
+
+
+@-webkit-keyframes anim-elem-1c {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+    }
+}
+
+@keyframes anim-elem-1c {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+    }
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+    }
+}
+
+
+@-webkit-keyframes anim-elem-2 {
+	0% { opacity: 0; -webkit-transform: translate3d(0, 50px, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-elem-2 {
+	0% { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0, 50px, 0); 
+        transform: translate3d(0, 50px, 0); }
+    
+	100% { 
+        opacity: 1; 
+        -webkit-transform: translate3d(0, 0, 0); 
+        transform: translate3d(0, 0, 0); 
+    }
+}

@@ -1,0 +1,157 @@
+/*
+ * ===================================
+ * Helper Classes
+ * 
+ * includes: spaces, hr, section, filling-section, small container
+ * ===================================
+ * */
+
+.hideOveflow {
+    overflow: hidden @i;
+}
+/*=== Spaces - smart tags for fast indentation ===*/
+
+.space, .space-sm, .space-md, .space-lg, .space-xlg {
+    display: block;
+    float: none;
+    clear: both;
+}
+.space-sm {
+    padding-top: 15px;
+}
+.space-md {
+    padding-top: 20px;
+}
+.space {
+    padding-top: 30px;
+}
+.space-lg {
+    padding-top: 50px;
+}
+.space-xlg {
+    padding-top: 80px;
+}
+/*=== Large line - <hr class="hr"> ===*/
+
+.hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*=== Section - make your site clearly with these classes ===*/
+
+@media (min-width: 768px) {
+    .section-sm {
+        padding: 20px 0;
+    }
+    .section-md {
+        padding: 30px 0;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .section-lg {
+        padding: 80px 0;
+    }
+    .section-xlg {
+        padding: 100px 0;
+    }
+}
+@media (max-width: 768px) {
+    .section-sm {
+        padding: 15px 0;
+    }
+    .section-md {
+        padding: 20px 0;
+    }
+    .section {
+        padding: 30px 0;
+    }
+    .section-lg {
+        padding: 50px 0;
+    }
+    .section-xlg {
+        padding: 70px 0;
+    }
+}
+.container-fluid.section, .container-fluid.section-md, .container-fluid.section-sm, .container-fluid.section-lg, .container-fluid.section-xlg, .container.section, .container.section-sm, .container.section-md, .container.section-lg, .container.section-xlg {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*=== seciton with no top padding ===*/
+
+.section-sm, .section-md, .section-lg, .section {
+    position: relative;
+}
+/*=== vertical and horizontal center  ===*/
+
+.hv-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // .transform(translate(-50%, -50%));
+}
+.centerY {
+    position: relative;
+    top: 50%;
+    .transform(translateY(-50%));
+}
+/*=== Margins ===*/
+
+.m-no-all {
+    margin: 0 @i;
+}
+.m-no-bottom {
+    margin-bottom: 0 @i;
+}
+.m-no-top {
+    margin-top: 0 @i;
+}
+.m-no-left {
+    margin-left: 0 @i;
+}
+.m-no-right {
+    margin-right: 0 @i;
+}
+.m-10-top {
+    margin-top: 10px @i;
+}
+/*=== Paddings ===*/
+
+.p-no-all {
+    padding: 0 @i;
+}
+.p-no-bottom {
+    padding-bottom: 0 @i;
+}
+.p-no-top {
+    padding-top: 0 @i;
+}
+.p-no-left {
+    padding-left: 0 @i;
+}
+.p-no-right {
+    padding-right: 0 @i;
+}
+/*=== center block fix ===*/
+
+.input-group.center-block {
+    display: inline-table;
+}
+.no-overflow {
+    position: relative;
+    overflow: hidden;
+}
+/* position relative */
+
+.p-relative {
+    position: relative;
+}
+.container-sm {
+    max-width: 57.14285714em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}

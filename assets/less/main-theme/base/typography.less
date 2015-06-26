@@ -1,0 +1,466 @@
+/*
+ * ===================================
+ * Typography
+ * ===================================
+ * */
+
+html {
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+body {
+    position: relative;
+}
+/* Selecting text */
+
+::-moz-selection,
+::selection {
+    background: @grey800;
+    color: #fff;
+    text-shadow: none;
+}
+/*=== Revolution Slider typography ===*/
+
+.s-title {
+    &.s-dark {
+        color: #222;
+    }
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.s-subtitle {
+    &.s-dark {
+        color: #222;
+        line-height: 24px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 5px 10px;
+    }
+    color: #fff;
+    font-size: 24px;
+}
+
+.s-title-v2 {
+    font-size: 54px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.s-subtitle-v2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+    .s-subtitle-v2,
+    .s-title-v2,
+    .s-title,
+    .s-subtitle {
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 991px) {
+    .s-subtitle-v2,
+    .s-title-v2,
+    .s-title,
+    .s-subtitle {
+        font-weight: 400;
+    }
+}
+/*===    Headings    ===*/
+/*=== Large title and subtitle ===*/
+
+.lg-title {
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    text-transform: @text-up;
+    color: @grey600;
+    font-size: 45px;
+    margin-top: 0;
+    line-height: 50px;
+}
+
+.lg-subtitle {
+    text-align: center;
+    text-transform: @text-up;
+    color: @grey500;
+    top: -20px;
+    position: relative;
+    display: block;
+}
+/*=== Big title and subtitle ===*/
+
+@media (min-width: 768px) {
+    .big-title {
+        font-size: 40px;
+        color: @grey600;
+    }
+    .big-subtitle {
+        font-size: 18px;
+        color: @grey500;
+        margin: 20px auto 0;
+        font-weight: 300;
+        line-height: 28px;
+        max-width: 85%;
+        letter-spacing: 0.25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .big-title {
+        font-size: 30px;
+        color: @grey600;
+    }
+    .big-subtitle {
+        font-size: 15px;
+        color: @grey600;
+        margin: 15px auto 0;
+        line-height: 20px;
+    }
+}
+
+.bg-filter .lg-title,
+.bg-filter .big-title {
+    color: #fff;
+}
+/*=== Extra Large Title ===*/
+
+.xlg-title {
+    font-size: 5em;
+}
+/*=== Small Title ===*/
+
+.title-sm {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.title-sm-v2 {
+    font-weight: 400;
+    color: #777;
+    text-transform: uppercase;
+}
+/*=== Text blocks ===*/
+
+.text-block {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: @grey500;
+}
+
+.text-block-v1 {
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: @grey600;
+}
+
+.text-block-v2 {
+    line-height: 22px;
+    color: @grey600;
+}
+/*===   Test Colors    ===*/
+
+.text-black {
+    color: #000;
+}
+
+.text-muted {
+    color: @grey600 @i;
+}
+
+.text-white {
+    color: #fff @i;
+}
+
+.text-light {
+    color: @grey300;
+}
+
+a.text-light {
+    color: darken(@grey300, 15%);
+}
+
+.text-primary {
+    color: @primary;
+}
+
+a.text-primary:hover {
+    color: darken(@primary, 15%);
+}
+
+.text-success {
+    color: @success;
+}
+
+a.text-success:hover {
+    color: darken(@success, 15%);
+}
+
+.text-info {
+    color: @info;
+}
+
+a.text-info:hover {
+    color: darken(@info, 15%);
+}
+
+.text-warning {
+    color: @warning;
+}
+
+a.text-warning:hover {
+    color: darken(@warning, 15%);
+}
+
+.text-danger {
+    color: @danger;
+}
+
+a.text-danger:hover {
+    color: darken(@danger, 15%);
+}
+
+.bg-primary {
+    color: #ffffff @i;
+    background-color: @primary @i;
+}
+
+a.bg-primary:hover {
+    color: #fff;
+    background-color: darken(@primary, 15%);
+}
+
+.bg-success {
+    color: #fff;
+    background-color: @success @i;
+}
+
+a.bg-success:hover {
+    background-color: darken(@success, 15%);
+}
+
+.bg-info {
+    color: #fff;
+    background-color: @info @i;
+}
+
+a.bg-info:hover {
+    background-color: darken(@info, 15%);
+}
+
+.bg-warning {
+    color: #fff;
+    background-color: @warning @i;
+}
+
+a.bg-warning:hover {
+    background-color: darken(@warning, 15%);
+}
+
+.bg-danger {
+    color: #fff;
+    background-color: @danger @i;
+}
+
+a.bg-danger:hover {
+    background-color: darken(@danger, 15%);
+}
+/* === Text Colors - span tag === */
+
+.primary span {
+    color: @primary;
+}
+
+.success span {
+    color: @success;
+}
+
+.info span {
+    color: @info;
+}
+
+.warning span {
+    color: @warning;
+}
+
+.danger span {
+    color: @danger;
+}
+
+ul.default span,
+ul.danger span,
+ul.warning span,
+ul.info span,
+ul.success span,
+ul.primary span {
+    margin-right: 5px;
+}
+/* ===    Lists    === */
+/*=== Icons List ===*/
+
+.icons-list {
+    padding-left: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-bottom: 5px;
+        padding-right: 2.5px;
+        margin-top: 5px;
+        padding-left: 2.5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hover-content .icons-list li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/*=== Info list ===*/
+/* using in the portfolio item (down) */
+
+.info-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    > li {
+        margin-bottom: 15px;
+        > i:before {
+            margin-right: 8px;
+        }
+    }
+    &.text-special > li {
+        text-transform: uppercase;
+        font-size: 85%;
+        letter-spacing: 0.05em;
+        color: @grey600;
+    }
+    &.md-list li {
+        margin-bottom: 10px;
+    }
+    &.sm-list li {
+        margin-bottom: 5px;
+    }
+    &.style {
+        padding-left: 40px;
+    }
+    &.md-list li:last-child,
+    &.sm-list li:last-child,
+    > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bg-primary .info-list li {
+    color: #fff;
+}
+
+.info-list-border > li {
+    border-bottom: 1px solid @grey200;
+    padding-bottom: 10px;
+}
+/*=== Inline Buttons ===*/
+
+.inline-btn > .btn {
+    margin-right: 15px;
+}
+/*=== Contact list with info ===*/
+
+.info-bar {
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: @grey600;
+        font-weight: 600;
+    }
+    > li {
+        margin-bottom: 15px;
+        color: @grey600;
+        > p {
+            margin-bottom: 0;
+        }
+        i {
+            width: 1.5em;
+            height: 1em;
+            text-align: center;
+            font-size: 70%;
+            vertical-align: middle;
+            line-height: 0.85em;
+            color: @grey500;
+        }
+    }
+}
+/*=== List Button ===*/
+
+.list-btn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (min-width: 768px) {
+        li {
+            display: inline-block;
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        li {
+            display: block;
+            &:first-child {
+                margin-bottom: 15px;
+            }
+            a,
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+/* === Links === */
+
+a {
+    &:hover, &:focus {
+        color: darken(@primary, 15%);
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+/*=== Labels ===*/
+
+h3 > .label,
+h2 > .label,
+h1 > .label {
+    font-weight: 300;
+}
+
+.dl-horizontal {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .dl-horizontal dd:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.dl-horizontal dt {
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 2.5px 0;
+}
+
+.dl-horizontal dd {
+    padding: 2.5px 0;
+}

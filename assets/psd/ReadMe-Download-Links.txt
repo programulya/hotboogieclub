@@ -1,0 +1,2 @@
+Some files for Photoshop, which you will maybe to need for customization.
+They are placed separately, you can download them here: https://www.dropbox.com/sh/kpzxhj20kzsjs0a/AABsrnA68I1Cad1i39FfikEPa?dl=0 

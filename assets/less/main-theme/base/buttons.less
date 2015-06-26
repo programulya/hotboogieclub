@@ -1,0 +1,166 @@
+/*
+ * ===================================
+ * Buttons
+ * 
+ * includes: transparent buttons, extra large button, total transparent btn
+ * ===================================
+ * */
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: @border-radius;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+    .user-select(none); 
+    transition: @transition;
+    &:focus,
+    &:active:focus,
+    &.active:focus {
+        outline: none;
+    }
+}
+.btn-lg,
+.btn-group-lg > .btn {
+     .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm,
+.btn-group-sm > .btn {
+    .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-xs,
+.btn-group-xs > .btn {
+     .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+} 
+
+/* Btn Default */
+
+.btn-default {
+    .btn-basic(@grey500, @trn, @grey200);
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle.btn-default {
+        color: @grey600;
+        background-color: @grey200;
+        border-color: darken(@grey200, 15%);
+    }
+}
+
+/* Extra large button */
+
+@media (min-width: 768px) {
+    .btn-xlg {
+        padding: @padding-large-vertical @padding-large-horizontal !important;
+        letter-spacing: 1px;
+        text-transform: @text-up;
+    }
+}
+@media (max-width: 768px) {
+    .btn-xlg {
+        padding: @padding-base-vertical @padding-base-horizontal !important;
+        text-transform: @text-up;
+    }
+}
+
+/*=== Transparent Buttons ===*/
+
+/* Default Transparent Button v1 */
+.btn-default-trn {
+    .btn-trn-basic(#fff, @trn, #fff);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(@grey600, #fff);
+    }
+}
+
+/* Default Transparent Button v2 */
+.btn-default-trn-v2 {
+    .btn-trn-basic(@grey500, @trn, @grey300);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(@grey800, @trn);
+    }
+}
+
+/* Primary Transparent Button */
+.btn-primary-trn {
+    .btn-trn-basic(@primary, @trn, @primary);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(#fff, @primary);
+    }
+}
+
+/* Success Transparent Button */
+.btn-success-trn-v2 {
+    .btn-trn-basic(@success, @trn, @success);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(#fff, @success);
+    }
+}
+
+/* Info Transparent Button */
+.btn-info-trn {
+    .btn-trn-basic(@info, @trn, @info);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(#fff, @info);
+    }
+}
+
+/* Warning Transparent Button */
+.btn-warning-trn {
+    .btn-trn-basic(@warning, @trn, @warning);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(#fff, @warning);
+    }
+}
+
+/* Danger Transparent Button */
+.btn-danger-trn {
+    .btn-trn-basic(@danger, @trn, @danger);
+    &:focus,
+    &:hover {
+        .btn-trn-basic-hover(#fff, @danger);
+    }
+}
+
+/* Link Transparent Button */
+.btn-link-trn {
+    .btn-trn-basic(#fff, @trn, @trn);
+    &:focus,
+    &:hover {
+        color: @grey300;
+    }
+}
+
+/* Link - Button */
+.btn-link {
+    .transition(border 0.35s ease-out);
+    background: none;
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 14px;
+	&:focus,
+    &:hover {
+		color: darken(@primary, 10%);
+        text-decoration: none;
+    }
+}
+
+.btn.action {
+    background: none;
+    text-transform: uppercase;
+    padding: 0;
+    color: @primary;
+}

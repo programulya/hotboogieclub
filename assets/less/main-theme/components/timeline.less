@@ -1,0 +1,213 @@
+@transition: all 0.35s ease;
+.timeline {
+    .transition(@transition);
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        border-left: 2px solid @primary;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .btn-link {
+        z-index: 5;
+        position: relative;
+    }
+}
+
+#loadNews {
+    cursor: pointer;
+    .transition(@transition);
+}
+
+.label-month {
+    .transition(@transition);
+    text-align: center;
+    background: @primary;
+    padding: 14px 20px;
+    border-radius: @border-radius;
+    color: #fff;
+    text-transform: @text-up;
+    letter-spacing: 1px;
+    font-size: 16px;
+    width: 230px;
+    z-index: 2;
+    &:first-child {
+        position: relative;
+        left: 50%;
+        top: -50px;
+        .transform(translateX(-50%));
+        @media (min-width: 768px) {
+            margin-bottom: -45px;
+            margin-top: 15px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: -20px;
+        }
+    }
+    &:not(:first-child) {
+        position: relative;
+        overflow: hidden;
+        margin: auto auto 80px auto;
+        @media (min-width: 768px) {
+            top: 80px;
+        }
+        @media (max-width: 767px) {
+            top: 40px;
+        }
+    }
+    
+    &:last-child {
+        top: 0;
+        margin-top: 80px;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .i-plus {
+        font-weight: 300;
+        font-size: 1.25em;
+        line-height: 1;
+        vertical-align: top;
+    }
+}
+
+.box-post {
+    .transition(@transition);
+    background: #fff;
+    padding: 30px;
+	max-width: 525px;
+    @media (max-width: 767px) {
+        border-bottom: 1px solid @grey300;
+        position: relative;
+        z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    @media (min-width: 768px) {
+        border-bottom: 2px solid @grey300;
+        border-radius: @border-radius;
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+        &:after {
+            width: 0;
+            height: 0;
+            border-top: 15px solid @trn;
+            border-bottom: 15px solid @trn;
+        }
+        &.left {
+            margin: 30px 30px 0 0;
+            &:after {
+                border-left: 15px solid #fff;
+                right: 31px;
+                top: 70px;
+            }
+        }
+        &.right {
+            margin: 80px 0 0 30px;
+            &:after {
+                border-right: 15px solid #fff;
+                left: 31px;
+                top: 120px;
+            }
+        }
+        &:before {
+            border-radius: 50%;
+            width: 16px;
+            z-index: 3;
+            height: 16px;
+            background: @primary;
+            border: 2px solid #fff;
+        }
+        &.right:before {
+            top: 127.5px;
+            left: -7px;
+        }
+        &.left:before {
+            top: 77.5px;
+            right: -8.5px;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.showUp {
+    &.box-load {
+        opacity: 1;
+    }
+}
+
+.post-gallery {
+	position: relative;
+	@media (min-width: 1200px) {
+		margin-bottom: -60px;
+		min-height: 72px;
+		margin-top: 20px;
+	}
+	@media (max-width: 1199px) {
+		padding: 10px 0 25px 0;
+	}
+    ul {
+		@media (min-width: 1200px) {
+			position: absolute;
+			right: 0;
+        	top: 0;
+		}
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            max-height: 100px;
+            max-width: 100px;
+            position: relative;
+            .transition(all 0.35s ease-in-out);
+            box-shadow: 0.5px 0.5px 1px 0.5px fade(#000, 25%);
+			@media (min-width: 1200px) {
+				&:nth-child(1) {
+					z-index: 10;
+					.transform(translate(195%, -13%));
+				}
+				&:nth-child(2) {
+					z-index: 9;
+					 .transform(translate(98%, -8%));
+				}
+				&:nth-child(3) {
+					z-index: 8;
+					 .transform(translateX(0%));
+				}
+			}
+        }
+    }
+	@media (min-width: 1200px) {
+		 &:hover ul li {
+			&:nth-child(1) {
+				.transform(translate(0%, 0%));
+			}
+			&:nth-child(2) {
+				.transform(translate(0%, 0%));
+			}
+			&:nth-child(3) {
+				 .transform(translateX(0%));
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+/*
+ * ===================================
+ * Preloading animation
+ * ===================================
+ * */
+@keyframes rotateplane {
+    0% {
+        .transform(perspective(120px) rotateX(0deg) rotateY(0deg));
+    }
+    50% {
+        .transform(perspective(120px) rotateX(-180.1deg) rotateY(0deg));
+    }
+    100% {
+        .transform(perspective(120px) rotateX(-180deg) rotateY(-179.9deg));
+    }
+}
+.spinner {
+    width: 4em;
+    height: 4em;
+	background: @primary;
+	// transition:background 0.35s ease-out;
+    animation: rotateplane 1s infinite ease-out;
+}
+
+/*=== Welcome title ===*/
+.welcome {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4rem;
+    @media (min-width: 600px) {
+        min-width: 500px;
+    }
+    @media (max-width: 599px) {
+        min-width: 0;
+    }
+}
+
+/*=== Preloader wrap ===*/
+ 
+.preloader-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: @grey500;
+    z-index: 999999;
+    text-align: center;
+    overflow: hidden;
+}
+
+#page-wrap {
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+    background: #fff;
+}
+
+/*=== animted background ===*/
+@keyframes bgTransition {
+    0% {
+		background-color: @red400;
+    }
+    5% {
+		background-color: @pink400;
+    }
+	10% {
+		background-color: @deepPurple400
+	}
+	15% {
+		background-color: @indigo400;
+	}
+	20% {
+		background-color: @blue400;
+	}
+	25% {
+		background-color: @lightBlue500;
+	}
+	30% {
+		background-color: @cyan500;
+	}
+	35% {
+		background-color: @teal500;
+	}
+	40% {
+		background-color: @green500;
+	}
+	45% {
+		background-color: @lightGreen500;
+	}
+    50% {
+		background-color: @lime600;
+    }
+	55% {
+		background-color: @yellow700;
+    }
+	60% {
+		background-color: @amber500;	
+    }
+	65% {
+		background-color: @orange500;
+    }
+	70% {
+		background-color: @deepOrange500;
+    }
+	75% {
+		background-color: #795548;
+    }
+	80% {
+		background-color: #9E9E9E;
+    }
+	85% {
+		background-color: #607D8B;
+    }
+	90% {
+		background-color: #546E7A
+    }
+	95% {
+		background-color: #455A64;
+	}
+	100% {
+		background-color: #263238;
+	}
+}
+.bgTransition1 {
+    animation: bgTransition 20s infinite linear alternate;
+}

@@ -1,0 +1,232 @@
+/*
+ * ===================================
+ * Navs
+ * 
+ * includes: Large tabs with icon, Full Width tabs, Inline Tabs, Filter Tabs, Filter Menu
+ * ===================================
+ * */
+
+/*  Large tab with icon (you can see it on the page Services III) */
+
+.lg-tabs {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    li {
+        background: #fff;
+        position: relative;
+        min-height: 1px;
+        float: left;
+        a:hover,
+        &.active a {
+            color: @primary;
+        }
+		.label {
+			position: relative;
+			top: -2.5px;
+			margin-left: 2px;
+		}
+    }
+    a {
+        color: @grey600;
+        background: #fff;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .lg-tabs {
+        li {
+            min-width: 25%;
+            padding: 25px 15px; 
+            border-right: 1px dashed @grey200;
+			border-left: 1px dashed @grey200;
+			margin-right: -2px;
+        }
+        a {
+            .transition(color 0.35s ease);
+        }
+        i {
+            font-size: 40px;
+        }
+        h3 {
+            margin: 20px 0 0;
+			text-transform: uppercase;
+			font-size: 18px;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .lg-tabs li {
+        padding: 25px 10px;
+    }
+}
+@media (max-width: 991px) {
+    .lg-tabs {
+        li {
+            width: 50%;
+            &:not(:last-child):not(:nth-child(3)) {
+                border-bottom: 1px dashed @grey200;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .lg-tabs {
+        li {
+            width: 100%;
+            padding: 15px 5px;
+            &:not(:last-child) {
+                border-bottom: 1px dashed @grey200;
+            }
+        }
+        i {
+            font-size: 24px;
+            float: left;
+            line-height: 30px;
+            width: 50px;
+        }
+        h3 {
+            text-align: left;
+            margin: 0;
+            line-height: 30px;
+            font-size: 24px;
+            overflow: hidden;
+        }
+    }
+}
+
+/*   Filter Inline Menu - version 2    */
+
+.filter-tabs {
+    text-align: center;
+    margin: 15px 0 30px 0;
+    padding: 0;
+    > div {
+        padding: 15px 20px;
+		background: @color3;
+        color: @color4;
+        border-radius: @border-radius;
+        cursor: pointer;
+        list-style: none;
+        .hover-content;
+        letter-spacing: 0.5px;
+        font-size: 13px;
+        &.cbp-filter-item-active {
+            background-color: @primary;
+            color: @color4;
+            &:hover {
+                background-color: darken(@primary, 5%);
+                color: #fff;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .filter-tabs > div {
+        display: inline-block;
+        margin: 0 7px 0 0;
+        .transition(all 0.35s ease);
+        &:hover {
+            background: lighten(@color3, 5%);
+        }
+    }
+}
+@media (max-width: 767px) {
+    .filter-tabs > div {
+        display: block;
+        margin: 0 5px 5px 0;
+        &:hover {
+            color: @color1;
+        }
+        &.cbp-filter-item-active:hover {
+            color: @color4;
+        }
+    }
+}
+
+/*=== Dots navigation ===*/
+
+.dotstyle  {
+        text-align: center;
+        margin-bottom: 15px !important;
+        margin-top: -15px;
+        position: relative;
+        padding: 0;
+        list-style: none;
+        -webkit-touch-callout: none;
+        .user-select(none);
+    li {
+        display: inline-block;
+        margin: 0 3px;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+        a {
+            display: block;
+            position: absolute;
+            .box-shadow(0 0 0 1px @grey300);
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            .transition(all 0.35s ease);
+            overflow: hidden;
+            padding: 0;
+             &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+				 	right: 0;
+				 	bottom: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    box-shadow: 0 0 0 1px @grey300;
+                    border-radius: 50%;
+                    background-color: @grey300;
+                    .transform(scale(0));
+                    .transition(all 0.35s ease);
+            }
+        }
+        &.active a:after {
+            .transform(scale(1));
+        }
+    }
+}
+
+/* === Rotate Hover Effect - using by pricing tables on the home page version 2 === */
+
+.visible-part,
+.hidden-part {
+    .transition(all 0.5s ease);
+    .backface-visibility(hidden);
+    background: #fff;
+}
+.visible-part {
+    cursor: pointer;
+    opacity: 1;
+    .transform(perspective(500px) rotateY(0deg));
+}
+.hidden-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: text;
+    opacity: 0;
+   .transform(perspective(500px) rotateY(180deg));
+}
+.hover-content:hover {
+    /* visible-part (current) will be hidden */
+    .visible-part {
+        opacity: 0;
+       .transform(perspective(500px) rotateY(-180deg));
+    }
+    /* hidden-part (current) will be visible */
+    .hidden-part {
+        opacity: 1;
+        .transform(perspective(500px) rotateY(0deg));
+    }
+}

@@ -1,0 +1,139 @@
+/*
+ * ===================================
+ * Background
+ * ===================================
+ * */
+
+/* === Background Color === */
+
+.bg-grey {
+    background: fade(@color4, 50%) @i;
+}
+.bg-dark {
+    background: @color2 @i;
+	.lg-title {
+		color: @color4;
+	}
+}
+
+/* === Filter of Background === */
+.bg-filter {
+    background: fade(#000, 60%);
+	width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+/* === Background Images === */
+.bg-img {
+    position: relative; 
+    overflow: hidden;
+    @media (min-width: 992px) {
+        height: 350px;
+    }
+    @media (max-width: 991px) {
+        height: 250px;
+    }    
+    @media (max-width: 767px) {
+        height: 180px;
+    }
+    width: 100%;
+    z-index: 1;
+    .bg-filter {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: fade(#000, 25%);
+    }
+    img {
+        position: relative;
+        left: 0 @i;
+        right: 0 @i;
+        .transform(translate(0,-20%));
+        z-index: -1;
+        height: auto; 
+        display: block;
+        max-width: 100%;
+    }
+}
+
+/* === Social Networks - Background Colors === */
+
+.facebook {
+    background: @facebook;
+}
+.text-facebook {
+    color: @facebook;
+}
+.google { 
+    background: @google;
+}
+.text-google {
+    color: @google;
+}
+.twitter {
+    background: @twitter;
+}
+.text-twitter {
+    color: @twitter;
+}
+.youtube {
+    background: @youtube;
+}
+.text-youtube {
+    color: @youtube;
+}
+.linkedin {
+    background: @linkedin;
+}
+.text-linkedin {
+    color: @linkedin;
+}
+.instagram {
+    background: @instagram;
+}
+.text-instagram {
+    color: @instagram;
+}
+.pinterest {
+    background: @pinterest;
+}
+.text-pinterest {
+    color: @pinterest;
+}
+.vine {
+    background: @vine;
+}
+.text-vine {
+    color: @vine;
+}
+.snapchat {
+    background: @snapchat;
+}
+.text-snapchat {
+    color: @snapchat;
+}
+.flickr {
+    background: @flickr;
+}
+.text-flickr {
+    color: @flickr;
+}
+.tumblr {
+    background: @tumblr;
+}
+.text-tumblr {
+    color: @tumblr;
+}
+.vimeo {
+    background: @vimeo;
+}
+.text-vimeo {
+    color: @vimeo;
+}
+.foursquare {
+    background: @foursquare;
+}
+.text-foursquare {
+    color: @foursquare;
+}

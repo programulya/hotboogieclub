@@ -1,0 +1,110 @@
+/*
+ * ===================================
+ * OWL Carousel
+ * ===================================
+ * */
+
+#teamSlider,
+#blogSlider {
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#teamSlider .owl-pagination {
+    margin-top: 20px;
+}
+
+#twitterSlider blockquote {
+    border-left-color: fade(@primary, 80%);
+    color: @color6;
+	font-weight: 300;
+    footer {
+		font-weight: 400;
+		color: @color6;
+        a {
+            margin-left: 5px;
+        }
+    }
+}
+
+#testimonialsSlider .item {
+    padding-right: 10px;
+}
+
+#skillsSlider {
+    .item {
+        position: relative;
+        .skill {
+            max-width: 150px;
+            margin: auto;
+            max-height: 150px;
+            > i {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                .transform(translate(-50%, 0));
+                font-size: 65px;
+                line-height: 150px;
+                color: #777;
+            }
+        }
+        h3 {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin: 17px auto;   
+        }
+    }
+}
+
+/*=== OWL Carousel Navigation */
+.owl-pagination {
+        position: relative;
+        padding: 0;
+        list-style: none;
+        cursor: default;
+        margin: 0 auto;
+        -webkit-touch-callout: none;
+        .user-select(none);
+        text-align: center;
+        .owl-page {
+            display: inline-block;
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            margin: 2px 5px;
+            box-shadow: 0 0 0 1px @grey300;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            .transition(all 0.35s ease);
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+					bottom: 0;
+					right: 0;
+                    height: 100%;
+                    width: 100%;
+                    box-shadow: 0 0 0 1px @grey300;
+                    border-radius: 50%;
+                    background-color: @grey300;
+                    .transform(scale(0));
+                    .transition(all 0.35s ease);
+            }
+            &.active:after {
+                .transform(scale(1));
+            }
+    }
+}
+
+.bg-dark .owl-pagination .owl-page {
+	box-shadow: 0 0 0 1px @color3;
+	&:after {
+		background-color: @color3;
+		box-shadow: 0 0 0 1px @color3;
+	}
+}
