@@ -1,0 +1,1 @@
+In the folder 'EasyForm' are placed needed files for the contact form. Only javascript file is placed in 'assets/js/plugins/form.js'.
