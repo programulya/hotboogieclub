@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
     <link rel="stylesheet" href="assets/css/plugins/devicons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -70,16 +71,16 @@
         <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" id="nav">
                 <li class="dropdown active">
-                    <a href="#sTop">Home</a>
+                    <a href="#sTop">Главная</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#s2">About us</a>
+                    <a href="#s2">О нас</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#s4">Prices</a>
+                    <a href="#s4">Цены</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#s4">Contacts</a>
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -180,13 +181,33 @@
             </div>
             <div class="col-md-6">
                 <h2 class="text-primary">Какое у нас расписание?</h2>
-                <p class="text-block">
-                 - Пн-Ср - 19-00 Boogie-woogie (intermediate)
-                 - Пн-Ср - 20-30 Boogie-woogie (beginner intermediate)
-                 - Вт-Чт - 19-00 Boogie-woogie (intermediate advanced)
-                 - Вт-Чт - 20-30 Boogie-woogie (advanced)
-                 - Пт - 19-00 Solo jazz
-                </p>
+                <table class="text-block" id="timetable">
+                    <tr>
+                        <td>Пн-Ср</td>
+                        <td>19-00 Boogie-woogie (intermediate)</td>
+                        <td>Серёжа и Маша</td>
+                    </tr>
+                    <tr>
+                        <td>Пн-Ср</td>
+                        <td>20-30 Boogie-woogie (beginner-intermediate)</td>
+                        <td>Серёжа и Лида</td>
+                    </tr>
+                    <tr>
+                        <td>Вт-Чт</td>
+                        <td>20-30 Boogie-woogie (intermediate-advanced)</td>
+                        <td>Серёжа и Лида</td>
+                    </tr>
+                    <tr>
+                        <td>Вт-Чт</td>
+                        <td>20-30 Boogie-woogie (advanced)</td>
+                        <td>Серёжа и Лида</td>
+                    </tr>
+                    <tr>
+                        <td>Пт</td>
+                        <td>19-00 Solo jazz</td>
+                        <td>Морковка</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="space-lg"></div>
@@ -960,29 +981,6 @@
 </div>
 </div>
 <div class="space-xlg"></div>
-<!-- FAQ -->
-
-<div class="space-lg"></div>
-<div class="panel panel-default bg-grey text-center wow fadeIn">
-    <div class="panel-body">
-        <h4 class="wow fadeIn" data-wow-delay="0.25s">Feel free to contact us, we will advise you and we will find
-            together the right choice for you!</h4>
-        <div class="space-sm"></div>
-        <ul class="list-inline wow fadeIn contact-box" data-wow-delay="0.5s">
-            <li>
-                <a href="#s5" class="btn btn-primary scroll">
-                    <i class="fa fa-envelope"></i>support@bootstrapart.net
-                </a>
-            </li>
-            <li>
-                <a href="#" class="btn btn-primary-trn">
-                    <i class="fa fa-phone"></i>+21 990 820 109
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
 </div>
 <!-- /PRICING SECTION -->
 
@@ -1081,8 +1079,32 @@
 <!-- /TESTIMONIALS SECTION -->
 
 <!-- GOOGLE MAPS -->
-<div id="map"></div>
-<!-- /GOOGLE MAPS -->
+<div class="space-lg" id="contacts"></div>
+<div class="panel panel-default bg-grey text-center wow fadeIn">
+    <div class="panel-body">
+        <h4 class="wow fadeIn" data-wow-delay="0.25s">Feel free to contact us, we will advise you and we will find
+            together the right choice for you!</h4>
+        <div class="space-sm"></div>
+        <ul class="list-inline wow fadeIn contact-box" data-wow-delay="0.5s">
+            <li>
+                <a href="#s5" class="btn btn-primary scroll">
+                    <i class="fa fa-envelope"></i>support@bootstrapart.net
+                </a>
+            </li>
+            <li>
+                <a href="#" class="btn btn-primary-trn">
+                    <i class="fa fa-phone"></i>+21 990 820 109
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="map"></div>
+    <!-- /GOOGLE MAPS -->
+
+</div>
+</div>
+
 
 <!-- FOOTER -->
 <div class="footer">
