@@ -6,11 +6,11 @@ function init() {
 	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
 	// Set your own position
-	var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+	var myLatlng = new google.maps.LatLng(50.46619, 30.52291);
 
 	var mapOptions = {
 		// How zoomed in you want the map to start at (always required)
-		zoom: 13,
+		zoom: 15,
 
 		// Control buttons for changing type of map was turned off
 		mapTypeControl: false,
@@ -119,7 +119,7 @@ function init() {
 	var map = new google.maps.Map(mapElement, mapOptions);
 
 	//-- Primary marker --//
-	var contentString = '885 3rd Ave<br>NY 10022';
+	var contentString = 'Ильинская 9';
 
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString
