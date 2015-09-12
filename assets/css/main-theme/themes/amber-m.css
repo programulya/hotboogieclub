@@ -1507,16 +1507,28 @@ button .fa-angle-double-right:before {
 }
 /* faces */
 .profile-1 {
-  background-image: url("../../../img/faces/1.jpg");
+  background-image: url("../../../img/photos/teachers/kuva.jpg");
 }
 .profile-2 {
-  background-image: url("../../../img/photos/teachers/carrot.jpg");
+  background-image: url("../../../img/photos/teachers/sonya.jpg");
 }
 .profile-3 {
-  background-image: url("../../../img/faces/3.jpg");
+  background-image: url("../../../img/photos/teachers/masha.jpg");
 }
 .profile-4 {
-  background-image: url("../../../img/faces/4.jpg");
+  background-image: url("../../../img/photos/teachers/sergey.jpg");
+}
+.profile-5 {
+    background-image: url("../../../img/photos/teachers/carrot.jpg");
+}
+.profile-6 {
+    background-image: url("../../../img/photos/teachers/lida.jpg");
+}
+.profile-7 {
+    background-image: url("../../../img/photos/teachers/luda.jpg");
+}
+.profile-8 {
+    background-image: url("../../../img/photos/teachers/taras.jpg");
 }
 .lg-size.profile {
   height: 200px;

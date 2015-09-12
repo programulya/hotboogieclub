@@ -18,14 +18,12 @@
     <!-- MAIN STYLES -->
     <!-- If you want change theme, you need to remove old one and new one, how for Bootstrap, so for custom theme -->
     <link href="assets/css/bootstrap/themes/amber-b.css" rel="stylesheet" id="bootstrapTheme">
-    <!--<link href="assets/css/main-theme/themes/red-b.css" rel="stylesheet" id="mainTheme">-->
     <link href="assets/css/main-theme/themes/amber-m.css" rel="stylesheet" id="mainTheme">
-    <!--<link href="assets/css/main-theme/themes/red-m.css" rel="stylesheet" id="mainTheme">-->
 
     <!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>-->
     <!--<link href='http://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
 
     <!-- PLUGINS -->
     <link rel="stylesheet" href="assets/css/plugins/animations.css">
@@ -53,1175 +51,993 @@
  ===============================-->
 <div id="page-wrap">
 
-<!-- NAVIGATION -->
-<div class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings">
-    <div class="container">
-        <div class="navbar-header">
-            <!-- Mobile Navigation -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                <span class="sr-only">Навигация</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--/END Mobile Navigation -->
-            <!-- Logo/Name -->
-            <a class="scroll navbar-brand scroll" href="#sTop">Hot Boogie Club</a>
+    <!-- NAVIGATION -->
+    <div class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Mobile Navigation -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">Навигация</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--/END Mobile Navigation -->
+                <!-- Logo/Name -->
+                <a class="scroll navbar-brand scroll" href="#sTop">Hot Boogie Club</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="nav">
+                    <li class="dropdown active">
+                        <a href="#sTop">Главная</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#s2">О нас</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#s4">Цены</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" id="nav">
-                <li class="dropdown active">
-                    <a href="#sTop">Главная</a>
+    </div>
+    <div id="navbarSpaceBottom"></div>
+    <!-- /NAVIGATION -->
+
+    <!-- SLIDESHOW -->
+    <span class="breakPoint" id="sTop"></span>
+
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE 1 -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
+                    data-thumb="assets/img/photos/general-3.jpg" data-saveperformance="off"
+                    data-title="Hot Boogie Club">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/img/photos/general-3.jpg" alt="Hot Boogie Club"
+                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <div class="tp-caption s-title-v2 customin stt  tp-resizeme" data-x="center" data-y="150"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000" data-start="1100" data-easing="Power4.easeOut" data-splitin="chars"
+                         data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                         data-endeasing="Power4.easeIn" data-endspeed="500"
+                         style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Hot Boogie Club
+                    </div>
+                    <div class="tp-caption s-subtitle-v2 customin stt tp-resizeme" data-x="center" data-y="230"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:1;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                         data-speed="1000" data-start="2600" data-easing="Power4.easeOut" data-splitin="words"
+                         data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                         data-endeasing="Power4.easeIn" data-endspeed="600"
+                         style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Студия
+                        рок-н-ролльных танцев
+                    </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#s2">О нас</a>
+                <!-- SLIDE 2 -->
+                <li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000"
+                    data-thumb="assets/img/photos/general.jpg" data-saveperformance="off" data-title="Hot Boogie Club">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/img/photos/general.jpg"
+                         data-lazyload="assets/img/photos/general.jpg" alt="Hot Boogie Club"
+                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <div class="tp-caption s-title customin stt tp-resizeme" data-x="700" data-y="278"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1500" data-start="1100" data-easing="Power4.easeOut" data-splitin="chars"
+                         data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Направления
+                    </div>
+                    <div class="tp-caption s-title customin stt tp-resizeme" data-x="870" data-y="278"
+                         data-hoffset="100"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1500" data-start="1800" data-easing="Power4.easeOut" data-splitin="chars"
+                         data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="550"
+                         data-endeasing="Power4.easeIn"
+                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">
+                    </div>
+                    <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="360"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="1500" data-start="2100" data-easing="Power4.easeInOut" data-splitin="none"
+                         data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="600"
+                         data-endeasing="Power4.easeIn"
+                         style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Boogie-woogie
+                    </div>
+                    <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="405"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="1500" data-start="2400" data-easing="Power4.easeInOut" data-splitin="none"
+                         data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="700"
+                         data-endeasing="Power4.easeIn"
+                         style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Shag
+                    </div>
+                    <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="450"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="1500" data-start="2700" data-easing="Power4.easeInOut" data-splitin="none"
+                         data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="800"
+                         data-endeasing="Power4.easeIn"
+                         style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">Solo jazz
+                    </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#s4">Цены</a>
+
+                <!-- SLIDE 3 -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
+                    data-thumb="assets/img/photos/general-4.jpg" data-saveperformance="off"
+                    data-title="Hot Boogie Club">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/img/photos/general-4.jpg" alt="Hot Boogie Club"
+                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
                 </li>
-                <li class="dropdown">
-                    <a href="#contacts">Контакты</a>
-                </li>
+                <!-- TIMER -->
+                <div class="tp-bannertimer tp-bottom"></div>
             </ul>
         </div>
     </div>
-</div>
-<div id="navbarSpaceBottom"></div>
-<!-- /NAVIGATION -->
 
-<!-- SLIDESHOW -->
-<span class="breakPoint" id="sTop"></span>
-<div class="tp-banner-container">
-    <div class="tp-banner">
-        <ul>
-            <!-- SLIDE 1 -->
-            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
-                data-thumb="assets/img/photos/general-3.jpg" data-saveperformance="off"
-                data-title="Hot Boogie Club">
-                <!-- MAIN IMAGE -->
-                <img src="assets/img/photos/general-3.jpg" alt="Hot Boogie Club"
-                     data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYERS -->
-                <div class="tp-caption s-title-v2 customin stt  tp-resizeme" data-x="center" data-y="150"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-speed="1000" data-start="1100" data-easing="Power4.easeOut" data-splitin="chars"
-                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                     data-endeasing="Power4.easeIn" data-endspeed="500"
-                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Hot Boogie Club
-                </div>
-                <div class="tp-caption s-subtitle-v2 customin stt tp-resizeme" data-x="center" data-y="230"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:1;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
-                     data-speed="1000" data-start="2600" data-easing="Power4.easeOut" data-splitin="words"
-                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                     data-endeasing="Power4.easeIn" data-endspeed="600"
-                     style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Студия рок-н-ролльных танцев
-                </div>
-            </li>
-            <!-- SLIDE 2 -->
-            <li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000"
-                data-thumb="assets/img/photos/general.jpg" data-saveperformance="off" data-title="Направления">
-                <!-- MAIN IMAGE -->
-                <img src="assets/img/photos/general.jpg"
-                     data-lazyload="assets/img/photos/general.jpg" alt="Hot Boogie Club"
-                     data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYERS -->
-                <div class="tp-caption s-title customin stt tp-resizeme" data-x="700" data-y="278"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-speed="1500" data-start="1100" data-easing="Power4.easeOut" data-splitin="chars"
-                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="500"
-                     data-endeasing="Power4.easeIn"
-                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Направления
-                </div>
-                <div class="tp-caption s-title customin stt tp-resizeme" data-x="870" data-y="278" data-hoffset="100"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-speed="1500" data-start="1800" data-easing="Power4.easeOut" data-splitin="chars"
-                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="550"
-                     data-endeasing="Power4.easeIn"
-                     style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">
-                </div>
-                <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="360"
-                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                     data-speed="1500" data-start="2100" data-easing="Power4.easeInOut" data-splitin="none"
-                     data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="600"
-                     data-endeasing="Power4.easeIn"
-                     style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Boogie-woogie
-                </div>
-                <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="405"
-                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                     data-speed="1500" data-start="2400" data-easing="Power4.easeInOut" data-splitin="none"
-                     data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="700"
-                     data-endeasing="Power4.easeIn"
-                     style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Shag
-                </div>
-                <div class="tp-caption s-subtitle s-dark customin stt tp-resizeme" data-x="700" data-y="450"
-                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                     data-speed="1500" data-start="2700" data-easing="Power4.easeInOut" data-splitin="none"
-                     data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="800"
-                     data-endeasing="Power4.easeIn"
-                     style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">Solo jazz
-                </div>
-            </li>
+    <!-- ABOUT US -->
+    <span class="breakPoint" id="s2"></span>
 
-            <!-- TIMER -->
-            <div class="tp-bannertimer tp-bottom"></div>
-        </ul>
-    </div>
-</div>
+    <div class="section-xlg p-no-bottom no-overflow">
+        <div class="container">
+            <h2 class="lg-title">О нас</h2>
 
-<!-- ABOUT US -->
-<span class="breakPoint" id="s2"></span>
-<div class="section-xlg p-no-bottom no-overflow">
-    <div class="container">
-        <h2 class="lg-title">О нас</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="text-primary">Кто мы?</h2>
-                <p class="text-block">Добро пожаловать в сообщество людей, объединенных рок-н-рольным танцем и его нетленной культурой!
-                    Студия «Hot Boogie Club» специализируется на танцах в стиле «Буги-Вуги»/Boogie-Woogie (или клубный рок-н-ролл). Мы научим вас танцевать так, как это делали в Америке в 50-е!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-primary">Кто мы?</h2>
+
+                    <p class="text-block">Добро пожаловать в сообщество людей, объединенных рок-н-рольным танцем и его
+                        нетленной культурой!
+                        Студия «Hot Boogie Club» специализируется на танцах в стиле «Буги-Вуги»/Boogie-Woogie (или
+                        клубный рок-н-ролл). Мы научим вас танцевать так, как это делали в Америке в 50-ые!</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-primary">Какое у нас расписание?</h2>
+                    <table class="text-block" id="timetable">
+                        <tr>
+                            <td>Пн-Ср</td>
+                            <td>19-00 Boogie-woogie (intermediate)</td>
+                            <td>Серёжа и Маша</td>
+                        </tr>
+                        <tr>
+                            <td>Пн-Ср</td>
+                            <td>20-30 Boogie-woogie (beginner-intermediate)</td>
+                            <td>Тарас и Маша</td>
+                        </tr>
+                        <tr>
+                            <td>Вт-Чт</td>
+                            <td>20-30 Boogie-woogie (intermediate-advanced)</td>
+                            <td>Серёжа и Лида</td>
+                        </tr>
+                        <tr>
+                            <td>Вт-Чт</td>
+                            <td>20-30 Boogie-woogie (advanced)</td>
+                            <td>Серёжа и Лида</td>
+                        </tr>
+                        <tr>
+                            <td>Пт</td>
+                            <td>19-00 Solo jazz</td>
+                            <td>Морковка</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2 class="text-primary">Какое у нас расписание?</h2>
-                <table class="text-block" id="timetable">
-                    <tr>
-                        <td>Пн-Ср</td>
-                        <td>19-00 Boogie-woogie (intermediate)</td>
-                        <td>Серёжа и Маша</td>
-                    </tr>
-                    <tr>
-                        <td>Пн-Ср</td>
-                        <td>20-30 Boogie-woogie (beginner-intermediate)</td>
-                        <td>Серёжа и Лида</td>
-                    </tr>
-                    <tr>
-                        <td>Вт-Чт</td>
-                        <td>20-30 Boogie-woogie (intermediate-advanced)</td>
-                        <td>Серёжа и Лида</td>
-                    </tr>
-                    <tr>
-                        <td>Вт-Чт</td>
-                        <td>20-30 Boogie-woogie (advanced)</td>
-                        <td>Серёжа и Лида</td>
-                    </tr>
-                    <tr>
-                        <td>Пт</td>
-                        <td>19-00 Solo jazz</td>
-                        <td>Морковка</td>
-                    </tr>
-                </table>
+            <div class="space-lg"></div>
+            <img class="img-responsive center-block wow fadeInUpBig lazy"
+                 src="assets/img/photos/general-1.jpg" alt="Influence Bootstrap theme - about us">
+        </div>
+    </div>
+    <!-- /ABOUT US -->
+
+    <!-- OUR SKILLS -->
+    <div class="bg-grey">
+        <div class="section-lg container">
+            <h2 class="lg-title">Что мы умеем?</h2>
+
+            <div class="space-md"></div>
+            <div class="owl-carousel" id="skillsSlider">
+                <div class="item">
+                    <div class="skill">
+                        <input class="lbKnob" value="95" type="hidden">
+                        <!--<img src="assets/img/dance-icons/lindy-hop.png">-->
+                        <i class="devicons devicons-html5"></i>
+                    </div>
+                    <h3>Boogie-woogie</h3>
+                </div>
+                <div class="item">
+                    <div class="skill">
+                        <input class="lbKnob" value="90" type="hidden">
+                        <i class="devicons devicons-aptana"></i>
+                    </div>
+                    <h3>Shag</h3>
+                </div>
+                <div class="item">
+                    <div class="skill">
+                        <input class="lbKnob" value="80" type="hidden">
+                        <i class="devicons devicons-javascript"></i>
+                    </div>
+                    <h3>Solo jazz</h3>
+                </div>
+                <div class="item">
+                    <div class="skill">
+                        <input class="lbKnob" value="65" type="hidden">
+                        <i class="devicons devicons-jquery"></i>
+                    </div>
+                    <h3>Lyndy hop</h3>
+                </div>
             </div>
         </div>
-        <div class="space-lg"></div>
-        <img class="img-responsive center-block wow fadeInUpBig lazy"
-             src="assets/img/photos/general-1.jpg" alt="Influence Bootstrap theme - about us"
-             >
     </div>
-</div>
-<!-- /ABOUT US -->
+    <!-- /OUR SKILLS -->
 
-<!-- OUR SKILLS -->
-<div class="bg-grey">
-    <div class="section-lg container">
-        <h2 class="lg-title">Что мы умеем?</h2>
+    <!-- OUR TEAM -->
+    <div class="section-xlg container">
+        <h2 class="lg-title">Команда</h2>
+
         <div class="space-md"></div>
-        <div class="owl-carousel" id="skillsSlider">
+        <div id="teamSlider" class="owl-carousel">
             <div class="item">
-                <div class="skill">
-                    <input class="lbKnob" value="95" type="hidden">
-                    <!--<img src="assets/img/dance-icons/lindy-hop.png">-->
-                    <i class="devicons devicons-html5"></i>
-                </div>
-                <h3>Boogie-woogie</h3>
-            </div>
-            <div class="item">
-                <div class="skill">
-                    <input class="lbKnob" value="90" type="hidden">
-                    <i class="devicons devicons-aptana"></i>
-                </div>
-                <h3>Shag</h3>
-            </div>
-            <div class="item">
-                <div class="skill">
-                    <input class="lbKnob" value="80" type="hidden">
-                    <i class="devicons devicons-javascript"></i>
-                </div>
-                <h3>Solo jazz</h3>
-            </div>
-            <div class="item">
-                <div class="skill">
-                    <input class="lbKnob" value="65" type="hidden">
-                    <i class="devicons devicons-jquery"></i>
-                </div>
-                <h3>Lyndy hop</h3>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /OUR SKILLS -->
-
-<!-- OUR TEAM -->
-<div class="section-xlg container">
-<h2 class="lg-title">Команда</h2>
-<div class="space-md"></div>
-<div id="teamSlider" class="owl-carousel">
-<div class="item">
-    <div class="profile-circle fadeIn wow" data-wow-delay="0.2s">
-        <div class="hover-content ">
-            <div class="profile profile-1 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Кува</h3>
-        <hr>
-        <p class="text-block">Босс. Танцует всё и всех</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle fadeIn wow" data-wow-delay="0.4s">
-        <div class="hover-content ">
-            <div class="profile profile-2 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Соня</h3>
-        <hr>
-        <p class="text-block">Очаровательная и всякое такое</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle fadeIn wow" data-wow-delay="0.6s">
-        <div class="hover-content ">
-            <div class="profile profile-3 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Маша</h3>
-        <hr>
-        <p class="text-block">Машута. Лалала</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle fadeIn wow" data-wow-delay="0.8s">
-        <div class="hover-content">
-            <div class="profile profile-4 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Сергей</h3>
-        <hr>
-        <p class="text-block">Крутой перец</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle">
-        <div class="hover-content">
-            <div class="profile profile-1 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Морковка</h3>
-        <hr>
-        <p class="text-block">Танцует с 10 лет, лалалалалал</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle">
-        <div class="hover-content ">
-            <div class="profile profile-2 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Лида</h3>
-        <hr>
-        <p class="text-block">Лида одовдопдваоп аоп вдоап овап</p>
-    </div>
-</div>
-<div class="item">
-    <div class="profile-circle">
-        <div class="hover-content ">
-            <div class="profile profile-2 lg-size"></div>
-            <div class="content-circle content-center">
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>Люда</h3>
-        <hr>
-        <p class="text-block">Люда одовдопдваоп аоп вдоап овап</p>
-        <button data-dialog="dialog1" class="btn trigger">Read More</button>
-    </div>
-</div>
-</div>
-</div>
-<!-- POP-UP WINDOWS FOR EACH MEMBER FROM THE TEAM -->
-<!-- DIALOG 1 -->
-<div id="dialog1" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Nicole Perry
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Nicole has over 10 years experience in the industry. She is our Creative
-                    Director, digital designer, web designer and front-end developer.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Nicole has over 10 years experience in the industry. She is our Creative Director, digital designer,
-                    web designer and front-end developer.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- DIALOG 2 -->
-<div id="dialog2" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Amy Perez
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Amy has qualifications in project management to ensure that the projects run
-                    smoothly from start to finish.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Amy has qualifications in project management to ensure that the projects run smoothly from start to
-                    finish.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- DIALOG 3 -->
-<div id="dialog3" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Ben Berry
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Ben is our Junior Designers. Ben is a web designer with knowledge of HTML
-                    and CSS and supports Nicole on projects.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Ben is our Junior Designers. Ben is a web designer with knowledge of HTML and CSS and supports
-                    Nicole on projects.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- DIALOG 4 -->
-<div id="dialog4" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Adele Taylor
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Adele has also worked with some big names and her designs have won her a
-                    number of industry awards. She is awesome UI designer.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Adele has also worked with some big names and her designs have won her a number of industry awards.
-                    She is awesome UI designer.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- DIALOG 5 -->
-<div id="dialog5" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Nicole Perry
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Nicole has over 10 years experience in the industry. She is our Creative
-                    Director, digital designer, web designer and front-end developer.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Nicole has over 10 years experience in the industry. She is our Creative Director, digital designer,
-                    web designer and front-end developer.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- DIALOG 6 -->
-<div id="dialog6" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 560 280"
-                 preserveaspectratio="none">
-                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
-        </div>
-        <div class="dialog-inner">
-            <h3>Amy Perez
-                <small></small>
-            </h3>
-            <div class="dialog-body">
-                <p class="text-block first">Amy has qualifications in project management to ensure that the projects run
-                    smoothly from start to finish.</p>
-                <h4>Recent Contributions</h4>
-                <p class="text-block second">
-                    Amy has qualifications in project management to ensure that the projects run smoothly from start to
-                    finish.
-                </p>
-            </div>
-            <div>
-                <button class="btn action" data-dialog-close="">Back</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /OUR TEAM -->
-
-<!-- PRICING SECTION -->
-<span class="breakPoint" id="s4"></span>
-<div class="section-xlg">
-<div class="container">
-<h2 class="lg-title">Цены</h2>
-<ul class="dotstyle nav">
-    <li class="active">
-        <a href="#pricesv1" data-toggle="tab"></a>
-    </li>
-    <li>
-        <a href="#pricesv2" data-toggle="tab"></a>
-    </li>
-    <li>
-        <a href="#pricesv3" data-toggle="tab"></a>
-    </li>
-</ul>
-<!-- Tab panes -->
-<div class="tab-content">
-<!-- First type of the pricing charts -->
-<div class="tab-pane active" id="pricesv1">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="panel panel-default prices-v3">
-                <div class="panel-body text-center">
-                    <div class="hover-content">
-                        <div class="visible-part">
-                            <h4 class="type">One time</h4>
-                            <h3 class="price text-primary">60₴</h3>
-                            <small class="text-grey month">1 занятие</small>
-                            <h5 class="text-primary details">Детали</h5>
-                        </div>
-                        <div class="hidden-part">
-                            <h4 class="type">Детали</h4>
-                            <ul class="list-unstyled info-list text-special md-list">
+                <div class="profile-circle fadeIn wow" data-wow-delay="0.2s">
+                    <div class="hover-content ">
+                        <div class="profile profile-1 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
                                 <li>
-                                    <span class="text-primary"></span>Любое занятие в школе
-                                </li>
-                                <!--<li>
-                                    <span class="text-primary">1</span> Email account
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
                                 </li>
                                 <li>
-                                    <span class="text-primary">2</span> Hosted domains
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
                                 </li>
                                 <li>
-                                    <span class="text-primary">24/7</span> Email support
-                                </li>-->
-                            </ul>
-                            <!--<a href="#" title="Start Trial Version">
-                                <h5 class="text-primary details">Start Trial</h5>
-                            </a>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default prices-v3">
-                <div class="panel-body text-center">
-                    <div class="hover-content">
-                        <div class="visible-part">
-                            <h4 class="type">Subscription</h4>
-                            <h3 class="price text-primary">360₴</h3>
-                            <small class="text-grey month">1 месяц</small>
-                            <h5 class="text-primary details">Детали</h5>
-                        </div>
-                        <div class="hidden-part">
-                            <h4 class="type">Детали</h4>
-                            <ul class="list-unstyled info-list text-special md-list">
-                                <li>
-                                    <span class="text-primary"></span>Занятия в школе два раза в неделю
-                                </li>
-                                <!--<li>
-                                    <span class="text-primary">10</span> Email account
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
                                 </li>
                                 <li>
-                                    <span class="text-primary">15</span> Hosted domains
-                                </li>
-                                <li>
-                                    <span class="text-primary">24/7</span> Email support
-                                </li>-->
-                            </ul>
-                            <!--<a href="#" title="Start Trial Version">
-                                <h5 class="text-primary details">Start Trial</h5>
-                            </a>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default prices-v3">
-                <div class="panel-body text-center">
-                    <div class="hover-content">
-                        <div class="visible-part">
-                            <h4 class="type">Personal</h4>
-                            <h3 class="price text-primary">$25</h3>
-                            <small class="text-grey month">per month</small>
-                            <h5 class="text-primary details">View Details</h5>
-                        </div>
-                        <div class="hidden-part">
-                            <h4 class="type">Details</h4>
-                            <ul class="list-unstyled info-list text-special md-list">
-                                <li>
-                                    <span class="text-primary">100Gb</span> Storage
-                                </li>
-                                <li>
-                                    <span class="text-primary">20</span> Email account
-                                </li>
-                                <li>
-                                    <span class="text-primary">25</span> Hosted domains
-                                </li>
-                                <li>
-                                    <span class="text-primary">24/7</span> Email support
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
                                 </li>
                             </ul>
-                            <a href="#" title="Start Trial Version">
-                                <h5 class="text-primary details">Start Trial</h5>
-                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Second type of the pricing charts -->
-<div class="tab-pane" id="pricesv2">
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="panel panel-default first prices-v1">
-                <div class="panel-heading bg-primary">
-                    <h2 class="name">Basic</h2>
-                </div>
-                <div class="panel-body">
-                    <h2 class="val-v1">$15
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list primary info-list info-list-border">
-                        <li>
-                            <span>5Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>1</span>Email account
-                        </li>
-                        <li>
-                            <span>2</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default">Start Trial</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default prices-v1">
-                <div class="panel-heading bg-primary">
-                    <h2 class="name">Premium</h2>
-                </div>
-                <div class="panel-body">
-                    <h2 class="val-v1">$50
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list primary info-list info-list-border">
-                        <li>
-                            <span>50Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>10</span>Email account
-                        </li>
-                        <li>
-                            <span>15</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default">Start Trial</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default last prices-v1">
-                <div class="panel-heading bg-primary">
-                    <h2 class="name">Business</h2>
-                </div>
-                <div class="panel-body">
-                    <h2 class="val-v1">$80
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list primary info-list info-list-border">
-                        <li>
-                            <span>100Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>20</span>Email account
-                        </li>
-                        <li>
-                            <span>25</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default">Start Trial</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Third type of the pricing charts -->
-<div class="tab-pane" id="pricesv3">
-    <div class="row">
-        <div class="col-sm-4 ">
-            <div class="panel panel-default prices first wow fadeInRight">
-                <div class="panel-body">
-                    <i class="fa fa-paper-plane icon-u"></i>
-                    <h2 class="val">$15
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list primary">
-                        <li>
-                            <span>5Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>1</span>Email account
-                        </li>
-                        <li>
-                            <span>2</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default">Start Trial</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default prices middle  bg-primary">
-                <div class="panel-body ">
-                    <div class="ribbon">Favorite</div>
-                    <i class="fa fa-plane icon-u"></i>
-                    <h2 class="val">$30
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list default">
-                        <li>
-                            <span>20Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>10</span>Email account
-                        </li>
-                        <li>
-                            <span>15</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default-trn">Start Trial</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 ">
-            <div class="panel panel-default prices last wow fadeInLeft">
-                <div class="panel-body">
-                    <i class="fa fa-rocket icon-u"></i>
-                    <h2 class="val">$50
-                        <small>/month</small>
-                    </h2>
-                    <ul class="info-list text-special md-list primary">
-                        <li>
-                            <span>100Gb</span>Storage
-                        </li>
-                        <li>
-                            <span>20</span>Email account
-                        </li>
-                        <li>
-                            <span>25</span>Hosted domains
-                        </li>
-                        <li>
-                            <span>24/7</span>Email support
-                        </li>
-                    </ul>
-                    <div class="space-md"></div>
-                    <a href="#" class="btn btn-default">Start Trial</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="space-xlg"></div>
-</div>
-<!-- /PRICING SECTION -->
-
-<!-- TESTIMONIALS SECTION -->
-<div class="section-xlg bg-dark">
-    <div class="container">
-        <h2 class="lg-title">Our client love us</h2>
-        <div id="testimonialsSlider" class="owl-carousel">
-            <div class="item">
-                <div class="content-box">
-                    <div class="profile profile-1 xs-size"></div>
-                    <div class="body">
-                        <p>"It’s just brilliant. I will recommend the product to everyone I know!"</p>
-                        <h4>Adele Taylor
-                            <em>Founder of Facebook</em>
-                        </h4>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="profile profile-2 xs-size"></div>
-                    <div class="body">
-                        <p>"I’m really glad these guys got that product out there. I’ve bought it and now think perhaps
-                            I should have invested!"</p>
-                        <h4>Nicole Perry
-                            <em>CIO of Google</em>
-                        </h4>
-                    </div>
+                    <h3>Кува</h3>
+                    <hr>
+                    <p class="text-block">Босс</p>
                 </div>
             </div>
             <div class="item">
-                <div class="content-box">
-                    <div class="profile profile-3 xs-size"></div>
-                    <div class="body">
-                        <p>"What a product. Why didn’t someone think of it sooner?"</p>
-                        <h4>Ben Berry
-                            <em>CMO of Twitter</em>
-                        </h4>
+                <div class="profile-circle fadeIn wow" data-wow-delay="0.4s">
+                    <div class="hover-content ">
+                        <div class="profile profile-2 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="content-box">
-                    <div class="profile profile-4 xs-size"></div>
-                    <div class="body">
-                        <p>"Get out there and buy it if you’re a customer and stock it if you’re a retailer – you’d be
-                            mad not to!"</p>
-                        <h4>Jenny Jonson
-                            <em>Partner of Apple</em>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="content-box">
-                    <div class="profile profile-1 xs-size"></div>
-                    <div class="body">
-                        <p>"It’s just brilliant. I will recommend the product to everyone I know!"</p>
-                        <h4>Adele Taylor
-                            <em>Founder of Facebook</em>
-                        </h4>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="profile profile-2 xs-size"></div>
-                    <div class="body">
-                        <p>"I’m really glad these guys got that product out there. I’ve bought it and now think perhaps
-                            I should have invested!"</p>
-                        <h4>Nicole Perry
-                            <em>CIO of Google</em>
-                        </h4>
-                    </div>
+                    <h3>Соня</h3>
+                    <hr>
+                    <p class="text-block">Соня</p>
                 </div>
             </div>
             <div class="item">
-                <div class="content-box">
-                    <div class="profile profile-3 xs-size"></div>
-                    <div class="body">
-                        <p>"What a product. Why didn’t someone think of it sooner?"</p>
-                        <h4>Ben Berry
-                            <em>CMO of Twitter</em>
-                        </h4>
+                <div class="profile-circle fadeIn wow" data-wow-delay="0.6s">
+                    <div class="hover-content ">
+                        <div class="profile profile-3 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <h3>Маша</h3>
+                    <hr>
+                    <p class="text-block">Машута</p>
                 </div>
-                <div class="content-box">
-                    <div class="profile profile-4 xs-size"></div>
-                    <div class="body">
-                        <p>"Get out there and buy it if you’re a customer and stock it if you’re a retailer – you’d be
-                            mad not to!"</p>
-                        <h4>Jenny Jonson
-                            <em>Partner of Apple</em>
-                        </h4>
+            </div>
+            <div class="item">
+                <div class="profile-circle fadeIn wow" data-wow-delay="0.8s">
+                    <div class="hover-content">
+                        <div class="profile profile-4 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <h3>Сергей</h3>
+                    <hr>
+                    <p class="text-block">Сергей</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="profile-circle">
+                    <div class="hover-content">
+                        <div class="profile profile-5 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Морковка</h3>
+                    <hr>
+                    <p class="text-block">Морковка</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="profile-circle">
+                    <div class="hover-content ">
+                        <div class="profile profile-6 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Лида</h3>
+                    <hr>
+                    <p class="text-block">Лида</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="profile-circle">
+                    <div class="hover-content ">
+                        <div class="profile profile-7 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Люда</h3>
+                    <hr>
+                    <p class="text-block">Люда</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="profile-circle">
+                    <div class="hover-content ">
+                        <div class="profile profile-8 lg-size"></div>
+                        <div class="content-circle content-center">
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Тарас</h3>
+                    <hr>
+                    <p class="text-block">Тарас</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- /TESTIMONIALS SECTION -->
+    <!-- /OUR TEAM -->
 
-<!-- GOOGLE MAPS -->
-<div class="space-lg" id="contacts"></div>
-<div class="panel panel-default bg-grey text-center wow fadeIn">
-    <div class="panel-body">
-        <h4 class="wow fadeIn" data-wow-delay="0.25s">Будем рады Вашему звонку!</h4>
-        <div class="space-sm"></div>
-        <ul class="list-inline wow fadeIn contact-box" data-wow-delay="0.5s">
-            <li>
-                <a href="mailto:julsavinkova@gmail.com" class="btn btn-primary scroll">
-                    <i class="fa fa-envelope"></i>julsavinkova@gmail.com
-                </a>
-            </li>
-            <li>
-                <a href="tel:+380932696232" class="btn btn-primary-trn">
-                    <i class="fa fa-phone"></i>+380932696232
-                </a>
-            </li>
-        </ul>
-    </div>
+    <!-- PRICING SECTION -->
+    <span class="breakPoint" id="s4"></span>
 
-    <div id="map"></div>
-    <!-- /GOOGLE MAPS -->
-
-</div>
-</div>
-
-
-<!-- FOOTER -->
-<div class="footer">
-    <div class="container">
-        <div class="space-sm"></div>
-        <ul class="dark-icons icons-list center-block">
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-skype"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-youtube-play"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="Follow us">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="space-md"></div>
-        <div>&copy; 2015 Programulya. All rights reserved.</div>
-    </div>
-</div>
-<!-- /FOOTER -->
-
-<!-- STYLE SWITCHER -->
-<div class="style-switcher">
-    <i class="fa switcher-icon colorAnimation"></i>
-    <div class="body">
-        <h4>Change Color</h4>
-        <ul class="list-unstyled colors">
-            <li id="red"></li>
-            <li id="pink"></li>
-            <li id="deepPurple"></li>
-            <li id="indigo"></li>
-            <li id="blue"></li>
-            <li id="lightBlue"></li>
-            <li id="cyan"></li>
-            <li id="teal"></li>
-            <li id="green"></li>
-            <li id="lightGreen"></li>
-            <li id="lime"></li>
-            <li id="yellow"></li>
-            <li id="amber"></li>
-            <li id="orange"></li>
-            <li id="deepOrange"></li>
-        </ul>
-        <div class="space-md"></div>
-        <h4>Navigation</h4>
-        <div class="btn-group  btn-block">
-            <button type="button" class="btn btn-default btn-sm dropdown-toggle btn-block" data-toggle="dropdown">
-                Theme
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:void(0);" id="navDark">Dark</a>
+    <div class="section-xlg">
+        <div class="container">
+            <h2 class="lg-title">Цены</h2>
+            <ul class="dotstyle nav">
+                <li class="active">
+                    <a href="#pricesv1" data-toggle="tab"></a>
                 </li>
-                <li><a href="javascript:void(0);" id="navLight">Light</a>
+                <li>
+                    <a href="#pricesv2" data-toggle="tab"></a>
                 </li>
-                <li><a href="javascript:void(0);" id="navTrn">Transparent</a>
+                <li>
+                    <a href="#pricesv3" data-toggle="tab"></a>
                 </li>
             </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- First type of the pricing charts -->
+                <div class="tab-pane active" id="pricesv1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default prices-v3">
+                                <div class="panel-body text-center">
+                                    <div class="hover-content">
+                                        <div class="visible-part">
+                                            <h4 class="type">One time</h4>
+
+                                            <h3 class="price text-primary">60₴</h3>
+                                            <small class="text-grey month">1 занятие</small>
+                                            <h5 class="text-primary details">Детали</h5>
+                                        </div>
+                                        <div class="hidden-part">
+                                            <h4 class="type">Детали</h4>
+                                            <ul class="list-unstyled info-list text-special md-list">
+                                                <li>
+                                                    <span class="text-primary"></span>Любое занятие в школе
+                                                </li>
+                                                <!--<li>
+                                                    <span class="text-primary">1</span> Email account
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">2</span> Hosted domains
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">24/7</span> Email support
+                                                </li>-->
+                                            </ul>
+                                            <!--<a href="#" title="Start Trial Version">
+                                                <h5 class="text-primary details">Start Trial</h5>
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default prices-v3">
+                                <div class="panel-body text-center">
+                                    <div class="hover-content">
+                                        <div class="visible-part">
+                                            <h4 class="type">Subscription</h4>
+
+                                            <h3 class="price text-primary">360₴</h3>
+                                            <small class="text-grey month">1 месяц</small>
+                                            <h5 class="text-primary details">Детали</h5>
+                                        </div>
+                                        <div class="hidden-part">
+                                            <h4 class="type">Детали</h4>
+                                            <ul class="list-unstyled info-list text-special md-list">
+                                                <li>
+                                                    <span class="text-primary"></span>Занятия в школе два раза в неделю
+                                                </li>
+                                                <!--<li>
+                                                    <span class="text-primary">10</span> Email account
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">15</span> Hosted domains
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">24/7</span> Email support
+                                                </li>-->
+                                            </ul>
+                                            <!--<a href="#" title="Start Trial Version">
+                                                <h5 class="text-primary details">Start Trial</h5>
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default prices-v3">
+                                <div class="panel-body text-center">
+                                    <div class="hover-content">
+                                        <div class="visible-part">
+                                            <h4 class="type">Personal</h4>
+
+                                            <h3 class="price text-primary">$25</h3>
+                                            <small class="text-grey month">per month</small>
+                                            <h5 class="text-primary details">View Details</h5>
+                                        </div>
+                                        <div class="hidden-part">
+                                            <h4 class="type">Details</h4>
+                                            <ul class="list-unstyled info-list text-special md-list">
+                                                <li>
+                                                    <span class="text-primary">100Gb</span> Storage
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">20</span> Email account
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">25</span> Hosted domains
+                                                </li>
+                                                <li>
+                                                    <span class="text-primary">24/7</span> Email support
+                                                </li>
+                                            </ul>
+                                            <a href="#" title="Start Trial Version">
+                                                <h5 class="text-primary details">Start Trial</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second type of the pricing charts -->
+                <div class="tab-pane" id="pricesv2">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-default first prices-v1">
+                                <div class="panel-heading bg-primary">
+                                    <h2 class="name">Basic</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <h2 class="val-v1">$15
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list primary info-list info-list-border">
+                                        <li>
+                                            <span>5Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>1</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>2</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default prices-v1">
+                                <div class="panel-heading bg-primary">
+                                    <h2 class="name">Premium</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <h2 class="val-v1">$50
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list primary info-list info-list-border">
+                                        <li>
+                                            <span>50Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>10</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>15</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default last prices-v1">
+                                <div class="panel-heading bg-primary">
+                                    <h2 class="name">Business</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <h2 class="val-v1">$80
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list primary info-list info-list-border">
+                                        <li>
+                                            <span>100Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>20</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>25</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third type of the pricing charts -->
+                <div class="tab-pane" id="pricesv3">
+                    <div class="row">
+                        <div class="col-sm-4 ">
+                            <div class="panel panel-default prices first wow fadeInRight">
+                                <div class="panel-body">
+                                    <i class="fa fa-paper-plane icon-u"></i>
+
+                                    <h2 class="val">$15
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list primary">
+                                        <li>
+                                            <span>5Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>1</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>2</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default prices middle  bg-primary">
+                                <div class="panel-body ">
+                                    <div class="ribbon">Favorite</div>
+                                    <i class="fa fa-plane icon-u"></i>
+
+                                    <h2 class="val">$30
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list default">
+                                        <li>
+                                            <span>20Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>10</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>15</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default-trn">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <div class="panel panel-default prices last wow fadeInLeft">
+                                <div class="panel-body">
+                                    <i class="fa fa-rocket icon-u"></i>
+
+                                    <h2 class="val">$50
+                                        <small>/month</small>
+                                    </h2>
+                                    <ul class="info-list text-special md-list primary">
+                                        <li>
+                                            <span>100Gb</span>Storage
+                                        </li>
+                                        <li>
+                                            <span>20</span>Email account
+                                        </li>
+                                        <li>
+                                            <span>25</span>Hosted domains
+                                        </li>
+                                        <li>
+                                            <span>24/7</span>Email support
+                                        </li>
+                                    </ul>
+                                    <div class="space-md"></div>
+                                    <a href="#" class="btn btn-default">Start Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-xlg"></div>
         </div>
-        <div class="space-md hidden-xs hidden-sm"></div>
-        <h4 class="hidden-xs hidden-sm">Page width</h4>
-        <div class="btn-group  btn-block hidden-xs hidden-sm">
-            <button type="button" class="btn btn-default btn-sm dropdown-toggle btn-block" data-toggle="dropdown">
-                Choose
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:void(0);" id="boxed">Boxed</a>
+        <!-- /PRICING SECTION -->
+
+        <!-- TESTIMONIALS SECTION -->
+        <div class="section-xlg bg-dark">
+            <div class="container">
+                <h2 class="lg-title">Our client love us</h2>
+
+                <div id="testimonialsSlider" class="owl-carousel">
+                    <div class="item">
+                        <div class="content-box">
+                            <div class="profile profile-1 xs-size"></div>
+                            <div class="body">
+                                <p>"It’s just brilliant. I will recommend the product to everyone I know!"</p>
+                                <h4>Adele Taylor
+                                    <em>Founder of Facebook</em>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="profile profile-2 xs-size"></div>
+                            <div class="body">
+                                <p>"I’m really glad these guys got that product out there. I’ve bought it and now think
+                                    perhaps
+                                    I should have invested!"</p>
+                                <h4>Nicole Perry
+                                    <em>CIO of Google</em>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-box">
+                            <div class="profile profile-3 xs-size"></div>
+                            <div class="body">
+                                <p>"What a product. Why didn’t someone think of it sooner?"</p>
+                                <h4>Ben Berry
+                                    <em>CMO of Twitter</em>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="profile profile-4 xs-size"></div>
+                            <div class="body">
+                                <p>"Get out there and buy it if you’re a customer and stock it if you’re a retailer –
+                                    you’d be
+                                    mad not to!"</p>
+                                <h4>Jenny Jonson
+                                    <em>Partner of Apple</em>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-box">
+                            <div class="profile profile-1 xs-size"></div>
+                            <div class="body">
+                                <p>"It’s just brilliant. I will recommend the product to everyone I know!"</p>
+                                <h4>Adele Taylor
+                                    <em>Founder of Facebook</em>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="profile profile-2 xs-size"></div>
+                            <div class="body">
+                                <p>"I’m really glad these guys got that product out there. I’ve bought it and now think
+                                    perhaps
+                                    I should have invested!"</p>
+                                <h4>Nicole Perry
+                                    <em>CIO of Google</em>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-box">
+                            <div class="profile profile-3 xs-size"></div>
+                            <div class="body">
+                                <p>"What a product. Why didn’t someone think of it sooner?"</p>
+                                <h4>Ben Berry
+                                    <em>CMO of Twitter</em>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="profile profile-4 xs-size"></div>
+                            <div class="body">
+                                <p>"Get out there and buy it if you’re a customer and stock it if you’re a retailer –
+                                    you’d be
+                                    mad not to!"</p>
+                                <h4>Jenny Jonson
+                                    <em>Partner of Apple</em>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /TESTIMONIALS SECTION -->
+
+        <!-- GOOGLE MAPS -->
+        <div class="space-lg" id="contacts"></div>
+        <div class="panel panel-default bg-grey text-center wow fadeIn">
+            <div class="panel-body">
+                <h4 class="wow fadeIn" data-wow-delay="0.25s">Будем рады Вашему звонку!</h4>
+
+                <div class="space-sm"></div>
+                <ul class="list-inline wow fadeIn contact-box" data-wow-delay="0.5s">
+                    <li>
+                        <a href="mailto:julsavinkova@gmail.com" class="btn btn-primary scroll">
+                            <i class="fa fa-envelope"></i>julsavinkova@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380932696232" class="btn btn-primary-trn">
+                            <i class="fa fa-phone"></i>+380932696232
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="map"></div>
+            <!-- /GOOGLE MAPS -->
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="space-sm"></div>
+            <ul class="dark-icons icons-list center-block">
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
                 </li>
-                <li><a href="javascript:void(0);" id="wide">Wide</a>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
                 </li>
             </ul>
+            <div class="space-md"></div>
+            <div>&copy; 2015 Programulya. All rights reserved.</div>
         </div>
-        <div class="space-md hidden-xs hidden-sm"></div>
-        <h4 class="hidden-xs hidden-sm">Set Background</h4>
-        <ul class="list-unstyled colors hidden-xs hidden-sm">
-            <li class="bg-icon-1"></li>
-            <li class="bg-icon-2"></li>
-            <li class="bg-icon-3"></li>
-            <li class="bg-icon-4"></li>
-            <li class="bg-icon-5"></li>
-            <li class="bg-icon-6"></li>
-            <li class="bg-icon-7"></li>
-            <li class="bg-icon-8"></li>
-            <li class="bg-icon-9"></li>
-            <li class="bg-icon-10"></li>
-        </ul>
     </div>
-</div>
-<!-- /STYLE SWITCHER -->
+    <!-- /FOOTER -->
 
-<!--=== BACK TO TOP ===-->
-<a href="#" class="back-to-top">
-    <i class="fa fa-angle-up"></i>
-</a>
-<!--===/End BACK TO TOP ===-->
+    <!--=== BACK TO TOP ===-->
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--===/End BACK TO TOP ===-->
 </div>
 
 <!--===============================
@@ -1257,7 +1073,7 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/style-switcher.js"></script>
 <script>
-    $(function() {
+    $(function () {
         //Plugins Init
         Plugins.init();
         Plugins.animations();
