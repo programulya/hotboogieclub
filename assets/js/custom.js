@@ -114,7 +114,6 @@ var Custom = function($) {
     /*---------------------------------
         Captcha will be loaded automatically
     ----------------------------------*/
-    // TODO Add if contact form is present
     function captchaFix() {
         $(window).load(function() {
             document.getElementById('vimage').src = 'assets/php/EasyForm/image.php?' + Math.random();
@@ -150,7 +149,7 @@ var Custom = function($) {
             loadMoreNews();
         },
         captchaFix: function() {
-            //captchaFix();
+            captchaFix();
         },
         mobileMenuAnimation: function() {
             mobileMenuAnimation();
