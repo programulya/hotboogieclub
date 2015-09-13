@@ -3231,6 +3231,26 @@ body.wrap-width {
   text-transform: uppercase;
   margin: 17px auto;
 }
+#skillsSlider .boogie {
+  background-position: center;
+  background-image: url("../../../img//dance-icons/boogie.png");
+  background-repeat: no-repeat;
+}
+#skillsSlider .shag {
+  background-position: center;
+  background-image: url("../../../img//dance-icons/shag.png");
+  background-repeat: no-repeat;
+}
+#skillsSlider .solo-jazz {
+  background-position: center;
+  background-image: url("../../../img//dance-icons/solo-jazz.png");
+  background-repeat: no-repeat;
+}
+#skillsSlider .lindy-hop {
+  background-position: center;
+  background-image: url("../../../img//dance-icons/lindy-hop.png");
+  background-repeat: no-repeat;
+}
 /*=== OWL Carousel Navigation */
 .owl-pagination {
   position: relative;
